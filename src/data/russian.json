@@ -1,0 +1,122 @@
+{
+    "headerMain": {
+        "trialExam": "ПРОБНЫЙ ТЕСТ",
+        "resources": "Ресурсы"
+    },
+    "main": {
+        "newSubject": "НОВЫЙ ПРЕДМЕТ В ЕНТ",
+        "bigText": "Пройдите пробный тест и подготовьтесь к ЕНТ",
+        "readyTo": "Вы готовы стать программистом?",
+        "firstStep1": "Сделайте первый шаг, наберите",
+        "firstStep2": "и нажмите Enter.",
+        "toLearn": "Изучить программирование",
+        "news": "Новости о ЕНТ ",
+        "beOn": "БУДЬ В КУРСЕ",
+        "learnHtml": "Изучение HTML",
+        "learnHtmlText": "Изучите основные операции HTML",
+        "learnPython": "Изучение Python",
+        "learnPythonText": "Изучите основные операции Python",
+        "startLearn": "Начать обучение",
+        "newsText": "Абитуриенты для поступления на специальности в области ІТ будут выбирать предмет информатики начиная с 2022-2023 учебного года.",
+        "signText": "Регистрируйтесь на UNT Informatics и начните подготовку к ЕНТ прямо сейчас",
+        "signUp": "РЕГИСТРАЦИЯ"
+    },
+    "login": {
+        "goodPlatform": "для подготовки к ЕНТ по информатике",
+        "goodPlatform2": "Полезная платформа",
+        "prepareTo": "Методы подготовки",
+        "takingExams": "Сдать пробные тесты",
+        "practicing": "Практиковаться по кодинг задачам",
+        "learning": "Выучивание теории по темам",
+        "username": "Имя пользователя",
+        "nameOfSchool": "Школа",
+        "signUp": "Регистрация",
+        "signIn": "Войти",
+        "alreadyHave": "Уже имеете аккаунт?"
+    },
+    "home": {
+        "typesOf": "Методы подготовки",
+        "testing": "Тестирование",
+        "pratice": "Практика",
+        "theory": "Теория",
+        "additional": "Дополнительно"
+    },
+    "header": {
+        "trialExam": "Пробный тест",
+        "practice": "Практика",
+        "guide": "Обучение",
+        "myprofile": "Мой пофиль",
+        "connectWith": "Обратный связь",
+        "logOut": "Выйти"
+    },
+    "additional": {
+        "addQuestion": "Добавьте свой вопрос",
+        "sentence": "Вы можете добавить свой вопрос",
+        "question": "Вопрос",
+        "option": "вариант",
+        "context": "Контекст",
+        "media": "Медиа",
+        "optional": "Дополнительно",
+        "submit": "Сохранить",
+        "answer": "Ответ"
+    },
+    "profile": {
+        "username": "Имя пользователя",
+        "name": "Имя",
+        "max": "Максимальный балл",
+        "solved": "Решенные",
+        "simple": "Обычные",
+        "context": "Контекст",
+        "multiple": "Несколько правильных ответов",
+        "progress": "Ваш прогресс"
+    },
+    "testing": {
+        "standard": "Стандарт",
+        "standardText": "Стандартные вопросы ЕНТ по информатике",
+        "simple": "Обычные",
+        "simpleText": "Обычные вопросы с пятью вариантами и только одним правильным ответом.",
+        "context": "Контекст",
+        "contextText": "Пять обычных вопросов по выданному тексту",
+        "multiple": "Несколько правильных ответов",
+        "multipleText": "Вопрос с восьем вариантом и количество правильных ответов могут быть равны к одним или двум или к трём.",
+        "testing": "Тестирование"
+    },
+    "test": {
+        "question": "Вопрос"
+    },
+    "quizHeader": {
+        "finish": "ЗАВЕРШИТЬ",
+        "finishReview": "ЗАВЕРШИТЬ ОБЗОР",
+        "reviewMode": "ОБЗОР"
+    },
+    "theory": {
+        "know": "Знаю",
+        "dontKnow": "Не знаю", 
+        "mix": "Микс",
+        "mistakes": "Ошибки"
+    },
+    "result": {
+        "yourResult": "Результаты теста",
+        "testingDuration": "Время теста",
+        "score": "Балл",
+        "topics": "Темы",
+        "navigation": "Навигация"
+    },
+    "topics": {
+        "converting": "Преобразование чисел",
+        "logicOperations": "Логические операции"
+    },
+    "practice": {
+        "Python": "Python",
+        "PythonText": "Python",
+        "Html": "HTML",
+        "HtmlText": "HTML",
+        "Sql": "SQL",
+        "SqlText": "SQL",
+        "Excel": "Excel",
+        "ExcelText": "Excel",
+        "Converting": "Конвертирование чисел",
+        "ConvertingText": "Конвертирование чисел",
+        "practice": "Практика"
+    }
+}

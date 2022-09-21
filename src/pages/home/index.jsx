@@ -1,20 +1,19 @@
-import { useContext } from "react";
-import { DefaultContext } from "../../Context.js";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
-    const user = useContext(DefaultContext);
 
-    const logout = () => {
-        window.open(`${process.env.REACT_APP_API_URL}/auth/logout`, "_self");
-    };
-
+    let navigate = useNavigate();
+    async function toPage(path) {
+        navigate(`./${path}`, { replace: false })
+    }
     return (
         <div>
             Home
-            <div>
-                {user.name}
-            </div>
-            <div onClick={logout}>Log out</div>
+            <div onClick={() => { toPage('profile') }}>Profile</div>
+            <div onClick={() => { toPage('testing') }}>Testing</div>
+            <div onClick={() => { toPage('practice') }}>Practice</div>
+            <div onClick={() => { toPage('theory') }}>Theory</div>
+            <div onClick={() => { toPage('additional') }}>Additional</div>
         </div>
     );
 };

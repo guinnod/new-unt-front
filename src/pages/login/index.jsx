@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { DefaultContext } from "../../Context";
 
 export const Login = () => {
-    const user = useContext(DefaultContext);
+    const { user } = useContext(DefaultContext);
     let navigate = useNavigate();
 
     async function toHome() {
@@ -27,7 +27,7 @@ export const Login = () => {
         <div>
             Login
             <div onClick={signIn}>
-                Home
+                to Home
             </div>
         </div>
     );

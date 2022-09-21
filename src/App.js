@@ -1,34 +1,48 @@
 import './App.css';
-import { DefaultContext } from "./Context.js";
+import { useEffect, useState } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { Main } from './pages/main';
 import { Login } from './pages/login';
 import { NotFound } from './pages/not-found';
 import { HomePage } from './routes/home';
-import { useEffect, useState } from 'react';
-
-import axios from 'axios';
+import { DefaultContext } from "./Context.js";
+import kazakh from './data/kazakh.json';
+import russian from './data/russian.json';
+// import axios from 'axios';
 
 function App() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const getUser = async () => {
-    try {
-      const url = `${process.env.REACT_APP_API_URL}/auth/login/success`;
-      const { data } = await axios.get(url, { withCredentials: true });
-      return data;
-    } catch (err) {
-      console.log(err);
+  const currentLanguage = localStorage.getItem('language') === 'ru' ? russian : kazakh;
+  const [language, setLanguage] = useState(currentLanguage);
+  const handleSetLanguage = () => {
+    let tempLanguage = localStorage.getItem('language');
+    if (tempLanguage === 'ru') {
+      setLanguage(kazakh);
+      localStorage.setItem('language', 'kz');
     }
-  };
+    else {
+      setLanguage(russian);
+      localStorage.setItem('language', 'ru');
+    }
+  }
+  // const getUser = async () => {
+  //   try {
+  //     const url = `${process.env.REACT_APP_API_URL}/auth/login/success`;
+  //     const { data } = await axios.get(url, { withCredentials: true });
+  //     return data;
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
   useEffect(() => {
-    setTimeout(() => {
-      getUser().then((data) => {
-        setUser(data.user._json);
-      }).finally(() => {
-        setLoading(false);
-      })
-    }, 500);
+    setUser(true)
+    setLoading(false)
+    // getUser().then((data) => {
+    //   setUser(data.user._json);
+    // }).finally(() => {
+    //   setLoading(false);
+    // })
   }, []);
   if (loading) {
     return (
@@ -39,7 +53,7 @@ function App() {
   }
   return (
     <div>
-      <DefaultContext.Provider value={user}>
+      <DefaultContext.Provider value={{ user, language, handleSetLanguage }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Main />} />
