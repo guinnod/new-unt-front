@@ -1,4 +1,24 @@
 import './App.css';
+import {
+  add
+  , calculator
+  , context
+  , converting
+  , deafultUser
+  , excel
+  , Flag_of_Kazakhstan, Flag_of_Russia
+  , forinput, freecodecamp
+  , google, hackkerrank
+  , headphones, html, instagram
+  , linkedin, logic
+  , mortarboard, multiple
+  , next, practice
+  , previous, python
+  , repeat, shuffle
+  , simple, sql
+  , standard, telegram
+  , testing, theory
+} from './media/index';
 import { useEffect, useState } from 'react';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { Main } from './pages/main';
@@ -53,7 +73,26 @@ function App() {
   }
   return (
     <div>
-      <DefaultContext.Provider value={{ user, language, handleSetLanguage }}>
+      <DefaultContext.Provider value={{
+        user, language, handleSetLanguage, add
+        , calculator
+        , context
+        , converting
+        , deafultUser
+        , excel
+        , Flag_of_Kazakhstan, Flag_of_Russia
+        , forinput, freecodecamp
+        , google, hackkerrank
+        , headphones, html, instagram
+        , linkedin, logic
+        , mortarboard, multiple
+        , next, practice
+        , previous, python
+        , repeat, shuffle
+        , simple, sql
+        , standard, telegram
+        , testing, theory
+      }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Main />} />
