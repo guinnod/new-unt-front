@@ -1,4 +1,4 @@
-import { NotFound } from "../../pages/not-found";
+import { NotFound } from "../../../pages/not-found";
 import { Routes, Route } from 'react-router-dom';
 export const UniversalRoutes = ({ routes }) => {
     return (

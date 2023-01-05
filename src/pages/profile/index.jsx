@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { PageSkeleton } from "../../components/universals/page-skeleton";
 import { DefaultContext } from "../../Context";
 
 export const Profile = () => {
@@ -8,12 +9,14 @@ export const Profile = () => {
         window.open(`${process.env.REACT_APP_API_URL}/auth/logout`, "_self");
     };
     return (
-        <div>
-            Profile
+        <PageSkeleton header={'home'} footer={true}>
             <div>
-                {user.name}
+                Profile
+                <div>
+                    {user.name}
+                </div>
+                <div onClick={logout}>Log out</div>
             </div>
-            <div onClick={logout}>Log out</div>
-        </div>
+        </PageSkeleton>
     );
 };

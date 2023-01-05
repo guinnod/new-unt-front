@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Rules } from "../../pages/rules";
-import { Result } from "../../pages/result"
-export const UniversalTesting = ({ content }) => {
+import { Rules } from "../../../pages/rules";
+import { Result } from "../../../pages/result"
+export const UniversalTheory = ({ content }) => {
     const [rules, setRules] = useState(true);
     const [isFinished, setFinish] = useState(false);
     if (rules) {
@@ -13,7 +13,7 @@ export const UniversalTesting = ({ content }) => {
         return (
             <div>
                 {content}
-                Testing
+                Theory
                 <div onClick={() => { setFinish(true) }} >Complete</div>
             </div>
         );

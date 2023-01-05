@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Rules } from "../../pages/rules";
-import { Result } from "../../pages/result"
+import { Rules } from "../../../pages/rules";
+import { Result } from "../../../pages/result"
 export const UniversalPractice = ({ content }) => {
     const [rules, setRules] = useState(true);
     const [isFinished, setFinish] = useState(false);
