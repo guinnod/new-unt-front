@@ -1,20 +1,15 @@
-import { Footer } from "./components/footer";
-import { HeaderHome } from "./components/header-home";
-import { HeaderMain } from "./components/header-main";
-import { HeaderWorking } from "./components/header-working";
-import { TopText } from "./components/top-text";
-import { Header } from "./components/universals/header";
+import { useContext } from 'react';
+import { PageSkeleton } from "./components/universals/page-skeleton";
+import { UniversalPages } from './components/universals/universal-pages';
+import { DefaultContext } from './Context';
+import { getPages } from './data/consts';
 
 
 export const Test = () => {
+    const {language } = useContext(DefaultContext);
     return (
-        <div >
-            <Header />
-            <HeaderMain />
-            <HeaderHome />
-            <HeaderWorking />
-            <Footer />
-            <TopText text={'Test'}/>
-        </div>
+        <PageSkeleton header='home' footer={true}>
+            <UniversalPages content={getPages('testing', language)}/>
+        </PageSkeleton>
     );
 };

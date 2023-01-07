@@ -2,23 +2,24 @@ import { UniversalPages } from "../components/universals/universal-pages";
 import { UniversalPractice } from "../components/universals/universal-practice";
 import { UniversalTesting } from "../components/universals/universal-testing";
 import { UniversalTheory } from "../components/universals/universal-theory";
+import { context, multiple, simple, standard } from "../media";
 
-const getPages = (type, language) => {
+export const getPages = (type, language) => {
     if (type === 'testing') {
         return {
             title: language.testing.testing,
             subtypes: [
                 {
-                    path: "standard", text: language.testing.standard, subText: language.testing.standardText
+                    path: "standard", text: language.testing.standard, subText: language.testing.standardText, src: standard
                 },
                 {
-                    path: "simple", text: language.testing.simple, subText: language.testing.simpleText
+                    path: "simple", text: language.testing.simple, subText: language.testing.simpleText, src: simple
                 },
                 {
-                    path: "context", text: language.testing.context, subText: language.testing.contextText
+                    path: "context", text: language.testing.context, subText: language.testing.contextText, src: context
                 },
                 {
-                    path: "multiple", text: language.testing.multiple, subText: language.testing.multipleText
+                    path: "multiple", text: language.testing.multiple, subText: language.testing.multipleText, src: multiple
                 }
             ]
         };

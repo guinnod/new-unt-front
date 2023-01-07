@@ -5,6 +5,7 @@
 .header-home__portrait {
     width: 6rem;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .header-home__name {

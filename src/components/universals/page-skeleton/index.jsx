@@ -2,17 +2,16 @@ import { Footer } from "../../footer";
 import { Header } from "../header";
 import { HeaderHome } from "../../header-home";
 import { HeaderWorking } from "../../header-working";
-
+import './page-skeleton.css';
 
 export const PageSkeleton = ({ header, footer, children }) => {
     return (
-        <>
-            <div>
-                PageSkeleton
-            </div>
+        <div className='page-skeleton__anchor'>
             {header === 'home' ? <HeaderHome /> : header === 'working' ? <HeaderWorking /> : <Header />}
+            <div className='page-skeleton__content'>
             {children}
+            </div>
             {footer ? <Footer /> : <></>}
-        </>
+        </div>
     );
 };

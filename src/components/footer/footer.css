@@ -12,4 +12,5 @@
 
 .footer__logo {
     width: 5rem;
+    cursor: pointer;
 }
