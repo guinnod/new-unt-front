@@ -4,7 +4,7 @@ import { UniversalTesting } from "../components/universals/universal-testing";
 import { UniversalTheory } from "../components/universals/universal-theory";
 
 const getPages = (type, language) => {
-    if (type == 'testing') {
+    if (type === 'testing') {
         return {
             title: language.testing.testing,
             subtypes: [
@@ -23,7 +23,7 @@ const getPages = (type, language) => {
             ]
         };
     }
-    if (type == 'practice') {
+    if (type === 'practice') {
         return {
             title: language.practice.practice,
             subtypes: [
@@ -45,7 +45,7 @@ const getPages = (type, language) => {
             ]
         };
     }
-    if (type == 'theory') {
+    if (type === 'theory') {
         return {
             title: "Theory",
             subtypes: [
@@ -62,30 +62,30 @@ const getPages = (type, language) => {
 }
 
 export const getRoutes = (type, language) => {
-    if (type == 'testing') {
+    if (type === 'testing') {
         return [
-            { path: "/", Component: <UniversalPages content={getPages('testing', language)} /> },
-            { path: "/standard", Component: <UniversalTesting /> },
-            { path: "/simple", Component: <UniversalTesting /> },
-            { path: "/context", Component: <UniversalTesting /> },
-            { path: "/multiple", Component: <UniversalTesting /> }
+            { path: "", Component: <UniversalPages content={getPages('testing', language)} /> },
+            { path: "standard", Component: <UniversalTesting /> },
+            { path: "simple", Component: <UniversalTesting /> },
+            { path: "context", Component: <UniversalTesting /> },
+            { path: "multiple", Component: <UniversalTesting /> }
         ];
     }
-    if (type == 'practice') {
+    if (type === 'practice') {
         return [
-            { path: "/", Component: <UniversalPages content={getPages('practice', language)} /> },
-            { path: "/python", Component: <UniversalPractice /> },
-            { path: "/html", Component: <UniversalPractice /> },
-            { path: "/excel", Component: <UniversalPractice /> },
-            { path: "/converting", Component: <UniversalPractice /> },
-            { path: "/sql", Component: <UniversalPractice /> }
+            { path: "", Component: <UniversalPages content={getPages('practice', language)} /> },
+            { path: "python", Component: <UniversalPractice /> },
+            { path: "html", Component: <UniversalPractice /> },
+            { path: "excel", Component: <UniversalPractice /> },
+            { path: "converting", Component: <UniversalPractice /> },
+            { path: "sql", Component: <UniversalPractice /> }
         ];
     }
-    if (type == 'theory') {
+    if (type === 'theory') {
         return [
-            { path: "/", Component: <UniversalPages content={getPages('theory', language)} /> },
-            { path: "/mix", Component: <UniversalTheory /> },
-            { path: "/mistakes", Component: <UniversalTheory /> }
+            { path: "", Component: <UniversalPages content={getPages('theory', language)} /> },
+            { path: "mix", Component: <UniversalTheory /> },
+            { path: "mistakes", Component: <UniversalTheory /> }
         ];
     }
     return null;

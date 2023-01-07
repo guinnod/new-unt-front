@@ -1,0 +1,15 @@
+.footer__anchor .header__anchor {
+    padding: 2rem;
+}
+
+.footer__anchor .logo__img {
+    width: 6rem;
+}
+
+.footer__anchor .logo__text {
+    font-size: 2rem;
+}
+
+.footer__logo {
+    width: 5rem;
+}

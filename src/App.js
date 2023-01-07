@@ -28,6 +28,8 @@ import { HomePage } from './routes/home';
 import { DefaultContext } from "./Context.js";
 import kazakh from './data/kazakh.json';
 import russian from './data/russian.json';
+import { Test } from './Test';
+
 // import axios from 'axios';
 
 function App() {
@@ -46,6 +48,7 @@ function App() {
       localStorage.setItem('language', 'ru');
     }
   }
+  const flag = Flag_of_Kazakhstan;
   // const getUser = async () => {
   //   try {
   //     const url = `${process.env.REACT_APP_API_URL}/auth/login/success`;
@@ -91,13 +94,14 @@ function App() {
         , repeat, shuffle
         , simple, sql
         , standard, telegram
-        , testing, theory
+        , testing, theory, flag
       }}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/login" element={<Login />} />
             <Route path='/home/*' element={<HomePage />} />
+            <Route path='/test' element={<Test />} />
             <Route path='/*' element={<NotFound />} />
           </Routes>
         </BrowserRouter>

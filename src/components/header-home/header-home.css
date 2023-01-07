@@ -1,0 +1,12 @@
+.header-home__left {
+    margin: 0 0 0 3rem;
+}
+
+.header-home__portrait {
+    width: 6rem;
+    border-radius: 1rem;
+}
+
+.header-home__name {
+    font-size: 3rem;
+}
