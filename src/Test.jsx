@@ -1,12 +1,13 @@
-import { useContext } from 'react';
+import { useSelector } from 'react-redux';
 import { PageSkeleton } from "./components/universals/page-skeleton";
 import { UniversalPages } from './components/universals/universal-pages';
-import { DefaultContext } from './Context';
 import { getPages } from './data/consts';
 
 
 export const Test = () => {
-    const {language } = useContext(DefaultContext);
+    const language = useSelector((state)=> {
+        return state.language;
+    })
     return (
         <PageSkeleton header='home' footer={true}>
             <UniversalPages content={getPages('testing', language)}/>

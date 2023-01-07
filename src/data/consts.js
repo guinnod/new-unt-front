@@ -2,7 +2,7 @@ import { UniversalPages } from "../components/universals/universal-pages";
 import { UniversalPractice } from "../components/universals/universal-practice";
 import { UniversalTesting } from "../components/universals/universal-testing";
 import { UniversalTheory } from "../components/universals/universal-theory";
-import { context, multiple, simple, standard } from "../media";
+import { context, converting, excel, html, multiple, python, simple, sql, standard, theory } from "../media";
 
 export const getPages = (type, language) => {
     if (type === 'testing') {
@@ -29,19 +29,19 @@ export const getPages = (type, language) => {
             title: language.practice.practice,
             subtypes: [
                 {
-                    path: "python", text: language.practice.Python, subText: language.practice.PythonText
+                    path: "python", text: language.practice.Python, subText: language.practice.PythonText, src: python
                 },
                 {
-                    path: "html", text: language.practice.Html, subText: language.practice.HtmlText
+                    path: "html", text: language.practice.Html, subText: language.practice.HtmlText, src: html
                 },
                 {
-                    path: "sql", text: language.practice.Sql, subText: language.practice.SqlText
+                    path: "sql", text: language.practice.Sql, subText: language.practice.SqlText, src: sql
                 },
                 {
-                    path: "excel", text: language.practice.Excel, subText: language.practice.ExcelText
+                    path: "excel", text: language.practice.Excel, subText: language.practice.ExcelText, src: excel
                 },
                 {
-                    path: "converting", text: language.practice.Converting, subText: language.practice.ConvertingText
+                    path: "converting", text: language.practice.Converting, subText: language.practice.ConvertingText, src: converting
                 }
             ]
         };
@@ -51,10 +51,10 @@ export const getPages = (type, language) => {
             title: "Theory",
             subtypes: [
                 {
-                    path: "mix", text: language.theory.mix, subText: language.theory.mix
+                    path: "mix", text: language.theory.mix, subText: language.theory.mix, src: theory
                 },
                 {
-                    path: "mistakes", text: language.theory.mistakes, subText: language.theory.mistakes
+                    path: "mistakes", text: language.theory.mistakes, subText: language.theory.mistakes, src: theory
                 }
             ]
         };

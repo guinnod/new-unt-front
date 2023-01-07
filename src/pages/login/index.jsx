@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { DefaultContext } from "../../Context";
+
 
 export const Login = () => {
-    const { user } = useContext(DefaultContext);
+    
     let navigate = useNavigate();
 
     async function toHome() {
@@ -16,7 +15,7 @@ export const Login = () => {
         );
     };
     const signIn = () => {
-        if (user) {
+        if (true) {
             toHome();
         }
         else {

@@ -12,3 +12,7 @@ body {
     white-space: nowrap;
     background: #0d0f12;
 }
+
+img {
+    font-size: 2rem;
+}

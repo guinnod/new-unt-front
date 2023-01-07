@@ -1,10 +1,11 @@
-import { useContext } from "react";
-import { DefaultContext } from "../../Context";
+import { useSelector } from "react-redux";
 import { deafultUser } from "../../media";
 import { Header } from "../universals/header";
 import './header-home.css';
 export const HeaderHome = () => {
-    const {language} = useContext(DefaultContext);
+    const language = useSelector((state)=>{
+        return state.language.value;
+    });
     return (
         <div>
             <Header left={

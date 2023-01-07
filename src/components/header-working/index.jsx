@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { DefaultContext } from '../../Context';
+import { useSelector } from 'react-redux';
 import { calculator, headphones } from '../../media';
 import { Header } from '../universals/header';
 
@@ -7,7 +6,9 @@ import './header-working.css';
 
 
 export const HeaderWorking = () => {
-    const {language} = useContext(DefaultContext);
+   const language = useSelector((state)=> {
+    return state.language.value;
+   });
     return (
         <Header right={
             <div>
