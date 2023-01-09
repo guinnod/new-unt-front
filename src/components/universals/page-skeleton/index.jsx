@@ -11,7 +11,7 @@ export const PageSkeleton = ({ header, footer, children }) => {
             <div className='page-skeleton__content'>
             {children}
             </div>
-            {footer ? <Footer /> : <></>}
+            {footer ?  <></> : <Footer />}
         </div>
     );
 };

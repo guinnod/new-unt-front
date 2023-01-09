@@ -1,7 +1,9 @@
-export const Card = () => {
+import './card.css';
+
+export const Card = ({children}) => {
     return (
-        <div>
-            Card
+        <div className='card__anchor'>
+            {children}
         </div>
     );
 };

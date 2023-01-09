@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { LazyImage } from '../lazy-image';
 import './card-main.css';
 export const CardMain = ({ image, text, path }) => {
     return (
@@ -7,7 +8,8 @@ export const CardMain = ({ image, text, path }) => {
             <NavLink to={path} className='card-main__hover'>
                 <div>{text}</div>
             </NavLink>
-            <img className='card-main__image' src={image} alt={text} />
+            {/* <img className='card-main__image' src={image} alt={text} /> */}
+            <LazyImage src={image} className='card-main__image'/>
         </div>
 
     );
