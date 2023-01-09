@@ -15,7 +15,7 @@ export const UniversalPages = ({ content }) => {
                     <div className='universal-pages__card' key={path} onClick={() => { toPage(path) }}>
                         <img className='universal-pages__image' src={src} alt={text} />
                         <div className='universal-pages__bottom'>
-                            <div className='universal-pages__text'>{text}</div>
+                            <div>{text}</div>
                             <div className='universal-pages__text--sub'>{subText}</div>
                         </div>
                     </div>

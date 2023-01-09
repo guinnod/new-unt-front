@@ -1,0 +1,57 @@
+.card-main__anchor {
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+    height: 60rem;
+    width: 25rem;
+    font-size: 3rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-main__hover {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-main__image {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    cursor: pointer;
+    animation: outImage 1s;
+}
+
+.card-main__anchor:hover .card-main__image {
+    animation: zoomImage 1s;
+    height: 125%;
+}
+
+@keyframes zoomImage {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 125%;
+    }
+}
+
+@keyframes outImage {
+    from {
+        height: 125%;
+    }
+
+    to {
+        height: 100%;
+    }
+}

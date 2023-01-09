@@ -16,3 +16,8 @@ body {
 img {
     font-size: 2rem;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}

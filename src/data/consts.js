@@ -4,6 +4,8 @@ import { UniversalTesting } from "../components/universals/universal-testing";
 import { UniversalTheory } from "../components/universals/universal-theory";
 import { context, converting, excel, html, multiple, python, simple, sql, standard, theory } from "../media";
 
+
+
 export const getPages = (type, language) => {
     if (type === 'testing') {
         return {

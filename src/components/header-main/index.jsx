@@ -6,11 +6,10 @@ import './header-main.css';
 
 export const HeaderMain = () => {
     const language = useSelector((state)=>{
-        return state.language.value;
+        console.log(state.language);
+        return state.language;
     });
-    const flag = useSelector((state)=> {
-        return state.language.flag;
-    });
+    
     const dispatch = useDispatch();
     const changeLanguage = () => {
         dispatch(languageActions.change());
@@ -20,9 +19,9 @@ export const HeaderMain = () => {
     return (
         <Header right={
             <div>
-                <div className='header__button header__button--pink'>{language.headerMain.trialExam}</div>
-                <div className='header__button'>{language.headerMain.resources}</div>
-                <img className='header-main__flag' src={flag} alt="flag" onClick={changeLanguage}/>
+                <div className='header__button header__button--pink'>{language.value.headerMain.trialExam}</div>
+                <div className='header__button'>{language.value.headerMain.resources}</div>
+                <img className='header-main__flag' src={language.flag} alt="flag" onClick={changeLanguage}/>
             </div>
         }/>
     );
