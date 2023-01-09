@@ -1,5 +1,6 @@
 
-import { Card } from "./components/card";
+
+import { Navigator } from "./components/navigator";
 import { PageSkeleton } from "./components/universals/page-skeleton";
 
 
@@ -10,10 +11,7 @@ export const Test = () => {
     
     return (
         <PageSkeleton header='working' footer={true}>
-           <Card>
-            
-            
-           </Card>
+           <Navigator />
         </PageSkeleton>
     );
 };

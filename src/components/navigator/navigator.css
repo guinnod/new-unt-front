@@ -1,0 +1,30 @@
+.navigator__anchor {
+    overflow: scroll;
+    display: flex;
+    background-color: #2FD1BE;
+}
+
+.navigator__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+    background-color: #F1F3F6;
+    padding: 1rem 0;
+    margin: 1rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 900;
+    min-width: 4.2rem;
+}
+
+.navigator__block--active {
+    background-color: #EC008C;
+    color: white;
+}
+
+.navigator__block--selected {
+    background-color: black;
+    color: white;
+}
