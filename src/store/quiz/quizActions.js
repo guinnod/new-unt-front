@@ -40,7 +40,7 @@ const quizActionsSlice = createSlice({
 
         },
         countDown(state) {
-            state.timeLeft -= 500;
+            state.timeLeft -= 1000;
         }
     }
 });
