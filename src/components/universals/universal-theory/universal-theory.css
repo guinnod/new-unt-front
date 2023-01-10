@@ -1,0 +1,11 @@
+.theory__button {
+    color: #00E022;
+    border: 3px solid #00E022;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.theory__button--red {
+    color: #FF0000;
+    border-color: #FF0000;
+}

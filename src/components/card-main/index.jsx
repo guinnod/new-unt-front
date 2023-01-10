@@ -8,7 +8,6 @@ export const CardMain = ({ image, text, path }) => {
             <NavLink to={path} className='card-main__hover'>
                 <div>{text}</div>
             </NavLink>
-            {/* <img className='card-main__image' src={image} alt={text} /> */}
             <LazyImage src={image} className='card-main__image'/>
         </div>
 

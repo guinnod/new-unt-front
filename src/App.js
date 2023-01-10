@@ -1,16 +1,16 @@
-import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { Main } from './pages/main';
 import { Login } from './pages/login';
 import { NotFound } from './pages/not-found';
 import { Home } from './pages/home';
 import { Additional } from './pages/additional';
 import { Profile } from './pages/profile';
-import { Test } from './Test';
-import { useSelector } from 'react-redux';
 import Protected from './protected';
 import { getRoutes } from './data/consts';
 import { universalRoutes } from './components/universals/universal-routes';
+import './App.css';
+
 function App() {
   const language = useSelector((state) => {
     return state.language.value;
@@ -37,7 +37,6 @@ function App() {
             {universalRoutes(getRoutes('theory', language))}
           </Route>
         </Route>
-        <Route path='/test' element={<Test />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>

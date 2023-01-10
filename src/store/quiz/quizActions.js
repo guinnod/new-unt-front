@@ -3,12 +3,12 @@ import kzbase from '../../data/kzbase';
 const questions = kzbase;
 const userAnswers = new Array(35);
 userAnswers.fill("");
-
+let start = +new Date() + 6000000;
 const initialState = {
     questions: questions,
     userAnswers: userAnswers,
     current: 0,
-    timeLeft:  6000000
+    timeLeft: 6000000
 }
 
 const quizActionsSlice = createSlice({
@@ -40,7 +40,7 @@ const quizActionsSlice = createSlice({
 
         },
         countDown(state) {
-            state.timeLeft -= 1000;
+            state.timeLeft = start - +new Date();
         }
     }
 });

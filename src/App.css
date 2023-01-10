@@ -6,13 +6,13 @@ html {
 
 body {
     cursor: default;
+    user-select: none;
     margin: 0;
     box-sizing: border-box;
     color: white;
+    background: #0d0f12;
     font-family: 'Roboto';
     white-space: nowrap;
-    background: #0d0f12;
-    user-select: none;
 }
 
 img {

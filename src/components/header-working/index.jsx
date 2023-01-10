@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { calculator, headphones } from '../../media';
 import { Header } from '../universals/header';
-
 import './header-working.css';
 
 
