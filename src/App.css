@@ -3,6 +3,7 @@
 html {
     font-size: 62.35%;
 }
+
 body {
     cursor: default;
     margin: 0;
@@ -11,6 +12,7 @@ body {
     font-family: 'Roboto';
     white-space: nowrap;
     background: #0d0f12;
+    user-select: none;
 }
 
 img {

@@ -8,7 +8,7 @@ const initialState = {
     questions: questions,
     userAnswers: userAnswers,
     current: 0,
-    timeLeft: 40000
+    timeLeft:  6000000
 }
 
 const quizActionsSlice = createSlice({
@@ -21,22 +21,26 @@ const quizActionsSlice = createSlice({
         selectOption(state, action) {
             const index = action.payload.index;
             const option = `${action.payload.option}`;
-            if (index < 25) {
-                state.userAnswers[index] = state.userAnswers[index].includes(option) ? '' : option;
-            } else {
-                if (state.userAnswers[index].includes(option)) {
-                    let temp = '';
-                    let string = state.userAnswers[index];
-                    for (let i = 0; i < string.length; i++) {
-                        if (string.charAt(i) !== option.charAt(0)) {
-                            temp += `${string.charAt(i)}`;
-                        }
+
+            if (state.userAnswers[index].includes(option)) {
+                let temp = '';
+                let string = state.userAnswers[index];
+                for (let i = 0; i < string.length; i++) {
+                    if (string.charAt(i) !== option.charAt(0)) {
+                        temp += `${string.charAt(i)}`;
                     }
-                    state.userAnswers[index] = temp;
-                } else {
-                    state.userAnswers[index] += option;
                 }
+                state.userAnswers[index] = temp;
+            } else {
+                if (index < 25) {
+                    state.userAnswers[index] = option;
+                }
+                state.userAnswers[index] += option;
             }
+
+        },
+        countDown(state) {
+            state.timeLeft -= 500;
         }
     }
 });

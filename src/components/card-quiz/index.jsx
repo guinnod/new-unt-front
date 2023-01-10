@@ -5,7 +5,7 @@ export const CardQuiz = ({ currentQuestion, userAnswer, current, selectOption })
     return (
         <Card>
             <div className='card-quiz__anchor'>
-                <LazyImage src={currentQuestion.content}/>
+                <LazyImage src={currentQuestion.content} />
                 <div className="card-quiz__question">
                     {currentQuestion.question}
                 </div>
