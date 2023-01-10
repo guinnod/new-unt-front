@@ -1,4 +1,6 @@
-.card-quiz__anchor {}
+.card-quiz__anchor {
+    padding: 4rem;
+}
 
 .card-quiz__question {
     font-size: 2.5rem;
@@ -6,16 +8,25 @@
 
 .card-quiz__option__anchor {
     display: flex;
-    margin: 4rem;
+    align-items: center;
+    margin: 2rem 4rem;
     cursor: pointer;
+    border: black 2px solid;
+    border-radius: 2rem;
 }
 
 .card-quiz__option__text {
     font-weight: 10;
 }
 
-.card-quiz__option__label {}
+.card-quiz__option__label {
+    background-color: #2FD1BE;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
 
 .card-quiz__option__label--selected {
-    color: red;
+    color: white;
+    background-color: #EC008C;
 }
