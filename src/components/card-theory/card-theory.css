@@ -1,16 +1,25 @@
 .card-theory__root {
     transition: transform 1s;
     transform-style: preserve-3d;
-    width: 30rem;
+    width: 40rem;
+    height: 50rem;
+    font-size: 2rem;
     position: relative;
 }
 
-.card-theory__anchor { 
+.card-theory__anchor {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    background-color: #8a2be2;
+    background-color: #F1F3F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
     height: 100%;
     width: 100%;
+    white-space: normal;
+    border-radius: 2rem;
 }
 
 .card-theory__buttons {
@@ -18,9 +27,17 @@
 }
 
 .card-theory__anchor .theory__button {
+    margin: 1rem;
     padding: 1rem 1.5rem;
+    cursor: pointer;
 }
 
 .card-theory__anchor--flipped {
-    transform: rotateY( 180deg );
+    transform: rotateY(180deg);
+}
+
+.card-theory__anchor--back {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
 }
