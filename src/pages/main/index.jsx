@@ -69,7 +69,7 @@ export const Main = () => {
                             {language.news}<span className='main__optional--header--sub'>{language.beOn}</span>
                         </div>
                         <div className='main__optional__news'>
-                            <div>baigenews.kz</div>
+                            <a href="https://informburo.kz/kaz/newskaz/ubt-bejindik-paender-tizbesine-informatika-engizildi" target='_blank' rel='noreferrer'>informburo.kz</a>
                             <div className='main__optional__news__content'>
                                 {language.newsText}
                             </div>

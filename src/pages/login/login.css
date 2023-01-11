@@ -1,5 +1,7 @@
 .login__anchor {
     display: flex;
+    justify-content: space-around;
+    padding: 16.5rem 0;
 }
 
 .login__text {
@@ -10,11 +12,17 @@
 .login__text--big {
     font-size: 3rem;
     font-weight: 900;
+    margin: 1.5rem 0;
 }
 
 .login__text--big--yellow {
     color: #FCDC00;
 }
+
+.login__text--medium {
+    margin: 1.5rem 0;
+}
+
 .login__text ul {
     margin: 0;
 }

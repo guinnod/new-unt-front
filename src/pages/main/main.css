@@ -123,15 +123,16 @@
     padding: 2rem;
 }
 
-.main__optional__news>div:first-child {
+.main__optional__news>a{
     font-size: 3rem;
     margin: 0 0 1rem 0;
+    color: #000000;
+    text-decoration: underline;
 }
 
 .main__optional__news__content {
     white-space: normal;
     width: 60rem;
-    text-decoration: underline;
     font-style: italic;
 }
 

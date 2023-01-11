@@ -11,7 +11,7 @@ export const Login = () => {
                 <div className='login__text'>
                     <div className='login__text--big'>{language.goodPlatform2}</div>
                     <div className='login__text--big login__text--big--yellow'>{language.goodPlatform}</div>
-                    <div>{language.prepareTo}</div>
+                    <div className='login__text--medium'>{language.prepareTo}</div>
                     <ul>
                         <li>{language.takingExams}</li>
                         <li>{language.practicing}</li>
