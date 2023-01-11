@@ -8,7 +8,7 @@ import { Additional } from './pages/additional';
 import { Profile } from './pages/profile';
 import Protected from './protected';
 import { getRoutes } from './data/consts';
-import { universalRoutes } from './components/universals/universal-routes';
+import { universalRoutes } from './universals/universal-routes';
 import './App.css';
 
 function App() {
