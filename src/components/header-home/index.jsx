@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { deafultUser } from "../../media";
-import { Header } from "../universals/header";
+import { Header } from "../header";
 import './header-home.css';
 export const HeaderHome = () => {
     const language = useSelector((state)=>{

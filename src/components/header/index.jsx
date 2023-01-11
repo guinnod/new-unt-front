@@ -1,4 +1,4 @@
-import { Logo } from '../../logo';
+import { Logo } from '../logo';
 import './header.css';
 export const Header = ({ left, right }) => {
     return (

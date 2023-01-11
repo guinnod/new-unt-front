@@ -1,4 +1,4 @@
-import { CardTheory } from "../../card-theory";
+import { CardTheory } from "../../components/card-theory";
 import './universal-theory.css';
 export const UniversalTheory = () => {
     return (

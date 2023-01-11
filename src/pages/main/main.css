@@ -1,0 +1,159 @@
+.main__anchor {
+    background-color: #FCDC00;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.main__text--top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 25rem;
+}
+
+.main__news {
+    background: black;
+    font-weight: 800;
+    color: #FCDC00;
+    width: 30rem;
+    padding: 2rem;
+    align-self: flex-start;
+    margin: 0 0 5rem 0;
+}
+
+.main__text--big {
+    font-size: 8rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.main__text--top h1 {
+    margin: 7rem 0 0 0;
+}
+
+#main__input {
+    background: #292510;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: white;
+    width: 90%;
+}
+
+.main__input {
+    display: flex;
+    background: #292510;
+    width: 90rem;
+    padding: 1rem;
+}
+
+.main__input__image {
+    transform: rotate(180deg);
+    width: 1.5rem;
+    margin: 1rem;
+}
+
+.main__text--span {
+    background-color: #F8F8F8;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.main__optional {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__optional--header {
+    font-size: 4rem;
+    border-bottom: #000000 1px solid;
+    width: max-content;
+    padding: 1rem 2rem;
+}
+
+.main__optional--header--sub {
+    color: #7D7A64;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+.main__learn__block__anchor {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+}
+
+.main__learn__block__anchor a {
+    background-color: #000000;
+    padding: 1rem;
+    width: max-content;
+    align-self: flex-end;
+}
+
+.main__learn__block {
+    display: flex;
+    align-items: center;
+}
+
+.main__learn__block__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8rem;
+    white-space: normal;
+}
+
+.main__learn__block__text>div:first-child {
+    font-size: 3rem;
+}
+
+.main__learn__img--circled {
+    border-radius: 50%;
+    width: 10rem;
+    margin: 2rem;
+}
+
+.main__learn__img--medium {
+    width: 14rem;
+}
+
+.main__optional__news {
+    padding: 2rem;
+}
+
+.main__optional__news>div:first-child {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+}
+
+.main__optional__news__content {
+    white-space: normal;
+    width: 60rem;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.main__ready__anchor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+}
+
+.main__ready {
+    width: 80rem;
+    white-space: normal;
+    text-align: center;
+}
+
+.main__ready__button {
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: white;
+    width: max-content;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 4rem;
+}

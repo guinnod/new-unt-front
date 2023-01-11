@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import kzbase from '../../data/kzbase';
+import kzbase from '../data/base.json';
 const questions = kzbase;
 const userAnswers = new Array(35);
 userAnswers.fill("");

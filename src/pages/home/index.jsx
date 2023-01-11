@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { CardMain } from "../../components/card-main";
 import { TopText } from "../../components/top-text";
-import { PageSkeleton } from "../../components/universals/page-skeleton";
+import { PageSkeleton } from "../../components/page-skeleton";
 import { add, practice, testing, theory } from "../../media";
 import './home.css';
 export const Home = () => {

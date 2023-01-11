@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { PageSkeleton } from '../../components/universals/page-skeleton';
+import { PageSkeleton } from '../../components/page-skeleton';
 import { google } from '../../media';
 import './login.css';
 

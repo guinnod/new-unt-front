@@ -1,10 +1,8 @@
-import { UniversalPages } from "../components/universals/universal-pages";
-import { UniversalPractice } from "../components/universals/universal-practice";
-import { UniversalTesting } from "../components/universals/universal-testing";
-import { UniversalTheory } from "../components/universals/universal-theory";
+import { UniversalPages } from "../universals/universal-pages";
+import { UniversalPractice } from "../universals/universal-practice";
+import { UniversalTesting } from "../universals/universal-testing";
+import { UniversalTheory } from "../universals/universal-theory";
 import { context, converting, excel, html, multiple, python, simple, sql, standard, theory } from "../media";
-
-
 
 export const getPages = (type, language) => {
     if (type === 'testing') {

@@ -1,7 +1,7 @@
-import { Footer } from "../../footer";
-import { HeaderMain } from "../../header-main";
-import { HeaderHome } from "../../header-home";
-import { HeaderWorking } from "../../header-working";
+import { Footer } from "../footer";
+import { HeaderMain } from "../header-main";
+import { HeaderHome } from "../header-home";
+import { HeaderWorking } from "../header-working";
 import './page-skeleton.css';
 
 export const PageSkeleton = ({ header, footer, children, timeLeft, countDown }) => {
