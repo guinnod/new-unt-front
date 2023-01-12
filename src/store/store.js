@@ -1,13 +1,15 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { authReducer } from "./auth";
 import { languageReducer } from "./language";
-import { quizActionsReducer } from "./quizActions";
+import { quizReducer } from "./quiz";
+import { theoryReducer } from "./theory";
 
 const store = configureStore({
     reducer: {
-        language: languageReducer, 
-        auth: authReducer, 
-        quizActions: quizActionsReducer
+        language: languageReducer,
+        auth: authReducer,
+        quiz: quizReducer, 
+        theory: theoryReducer
     }
 });
 

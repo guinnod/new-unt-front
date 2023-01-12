@@ -11,8 +11,8 @@ const initialState = {
     timeLeft: 6000000
 }
 
-const quizActionsSlice = createSlice({
-    name: "quizActions",
+const quizSlice = createSlice({
+    name: "quiz",
     initialState: initialState,
     reducers: {
         toQuestion(state, action) {
@@ -46,5 +46,5 @@ const quizActionsSlice = createSlice({
 });
 
 
-export const quizActionsActions = quizActionsSlice.actions;
-export const quizActionsReducer = quizActionsSlice.reducer;
+export const quizActions = quizSlice.actions;
+export const quizReducer = quizSlice.reducer;

@@ -1,11 +1,50 @@
+.theory__anchor {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10rem;
+}
+
+.theory__part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .theory__button {
     color: #00E022;
     border: 3px solid #00E022;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
+    width: max-content;
 }
 
 .theory__button--red {
     color: #FF0000;
     border-color: #FF0000;
+}
+
+.theory__navigate {
+    width: 10rem;
+    cursor: pointer;
+}
+
+.theory__regime {
+    width: 6rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.card__theory__anchor {
+    align-self: center;
+    justify-self: center;
+}
+
+.theory__fill {
+    height: 5.5rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
