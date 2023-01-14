@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { calculator, headphones } from '../../media';
 import { Header } from '../header';
@@ -14,11 +14,13 @@ export const HeaderWorking = ({ timeLeft, countDown }) => {
         minutes: Math.floor((timeLeft / 1000 / 60) % 60),
         seconds: Math.floor((timeLeft / 1000) % 60),
     }
-    useEffect(() => {
-        setTimeout(() => {
-            countDown();
-        }, 1000);
-    });
+
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         countDown();
+    //     }, 1000);
+    // }, [timeLeft]);
+
     return (
         <Header right={
             <div>

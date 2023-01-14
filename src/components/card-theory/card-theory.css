@@ -5,6 +5,7 @@
     height: 50rem;
     font-size: 2rem;
     position: relative;
+    cursor: pointer;
 }
 
 .card-theory__anchor {
@@ -39,5 +40,19 @@
 .card-theory__anchor--back {
     position: absolute;
     top: 0;
-    cursor: pointer;
+}
+
+.card-theory__text {
+    text-align: center;
+    animation: textAnimate 1s;
+}
+
+@keyframes textAnimate {
+    from {
+        font-size: 1rem;
+    }
+
+    to {
+        font-size: 2rem;
+    }
 }
