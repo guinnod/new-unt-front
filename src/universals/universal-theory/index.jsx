@@ -22,7 +22,7 @@ export const UniversalTheory = () => {
                 dispatch(theoryActions.init());
             }}>Wanna play again?</div></div> :
                 <div className="theory__anchor">
-                    <div onClick={() => { change("NEXT"); select("DONT_KNOW") }} className="theory__part theory__part--red">
+                    <div onClick={() => { select("DONT_KNOW"); change("NEXT"); }} className="theory__part theory__part--red">
                         <div className="theory__count theory__count--red  ">{theory.dontKnows}</div>
                         <div className="theory__button theory__button--red">
                             {language.dontKnow}
@@ -33,7 +33,7 @@ export const UniversalTheory = () => {
                     </div>
 
                     <CardTheory question={theory.question} answer={theory.answer} />
-                    <div onClick={() => { change("NEXT"); select("KNOW") }} className="theory__part">
+                    <div onClick={() => { select("KNOW"); change("NEXT"); }} className="theory__part">
                         <div className="theory__count">{theory.knows}</div>
                         <div className="theory__button">
                             {language.know}
