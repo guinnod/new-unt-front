@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { PageSkeleton } from '../../components/page-skeleton';
 import { google } from '../../media';
 import './login.css';
@@ -21,9 +22,13 @@ export const Login = () => {
                 <div className="login__card">
                     <input type="text" id="username" placeholder={language.username} />
                     <input type="text" id="nameOfSchool" placeholder={language.nameOfSchool} />
-                    <div className='login__card__button'><img src={google} alt='google' /> <div>{language.signUp}</div></div>
+                    <Link to='/home'>
+                        <div className='login__card__button'><img src={google} alt='google' /> <div>{language.signUp}</div></div>
+                    </Link>
                     <div className='login__card__text'>{language.alreadyHave}</div>
-                    <div className='login__card__button'><img src={google} alt='google' /> <div>{language.signIn}</div></div>
+                    <Link to='/home'>
+                        <div className='login__card__button'><img src={google} alt='google' /> <div>{language.signIn}</div></div>
+                    </Link>
                 </div>
             </div>
         </PageSkeleton>

@@ -49,36 +49,39 @@ export const Additional = () => {
     return (
         <PageSkeleton header='home'>
             <TopText text={language.addQuestion} />
-            <div className='additional__anchor'>
-                <form action="" method="post">
-                    <div className='additional__part'>
-                        <div>
-                            {firstInputs.map((e, index) => {
-                                return (<input type="text" name={e.name} id={e.name} key={index} placeholder={e.placeholder} className='additional__input' />);
-                            })}
-                        </div>
-                        <div>
-                            <textarea name="context" id="context" cols="30" rows="10" placeholder={language.context} className='additional__input'></textarea>
-                            <div className='additional__media' >
-                                <input id='for-media' type="text" placeholder={language.media} className='additional__input' />
-                                <input className='additional__media--hidden' type="file" name="media2" id="media" accept='image/*' onChange={() => { showFileName('media', 'for-media') }} />
+            <div className="additional__root">
+                <div className='additional__anchor'>
+                    <div>{language.sentence}</div>
+                    <form action="" method="post">
+                        <div className='additional__part'>
+                            <div>
+                                {firstInputs.map((e, index) => {
+                                    return (<input type="text" name={e.name} id={e.name} key={index} placeholder={e.placeholder} className='additional__input' />);
+                                })}
                             </div>
-                            <div className='additional__media'>
-                                <input id='for-media2' type="text" placeholder={`${language.media} 2`} className='additional__input' />
-                                <input className='additional__media--hidden' type="file" name="media2" id="media2" accept='image/*' onChange={() => { showFileName('media2', 'for-media2') }} />
+                            <div>
+                                <textarea name="context" id="context" placeholder={language.context} className='additional__input'></textarea>
+                                <div className='additional__media' >
+                                    <input id='for-media' type="text" placeholder={language.media} className='additional__input' />
+                                    <input className='additional__media--hidden' type="file" name="media2" id="media" accept='image/*' onChange={() => { showFileName('media', 'for-media') }} />
+                                </div>
+                                <div className='additional__media'>
+                                    <input id='for-media2' type="text" placeholder={`${language.media} 2`} className='additional__input' />
+                                    <input className='additional__media--hidden' type="file" name="media2" id="media2" accept='image/*' onChange={() => { showFileName('media2', 'for-media2') }} />
+                                </div>
+                            </div>
+                            <div>
+                                {thirdInputs.map((e, index) => {
+                                    return (<input type="text" name={e.name} id={e.name} key={index} placeholder={e.placeholder} className='additional__input' />);
+                                })}
                             </div>
                         </div>
-                        <div>
-                            {thirdInputs.map((e, index) => {
-                                return (<input type="text" name={e.name} id={e.name} key={index} placeholder={e.placeholder} className='additional__input' />);
-                            })}
+                        <div className='additional__part'>
+                            <textarea name="context" id="context" placeholder={language.optional} className='additional__input additional__textarea--long'></textarea>
+                            <input type="submit" value={language.submit} className='additional__submit'/>
                         </div>
-                    </div>
-                    <div className='additional__part'>
-                        <textarea name="context" id="context" cols="30" rows="10" placeholder={language.context} className='additional__input'></textarea>
-                        <input type="submit" value={language.submit} />
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </PageSkeleton>
     );

@@ -29,7 +29,7 @@ export const Home = () => {
 
 
     return (
-        <PageSkeleton header='main' footer={true}>
+        <PageSkeleton header='home'>
             <TopText text={language.typesOf} />
             <div className='home__anchor'>
                 {homePages.map(({ image, text, path }, index) => {

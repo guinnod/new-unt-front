@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { PageSkeleton } from "../../components/page-skeleton";
 import { forinput, freecodecamp, hackkerrank } from "../../media";
 
@@ -78,7 +79,9 @@ export const Main = () => {
                 </div>
                 <div className='main__ready__anchor' >
                     <h1 className='main__ready' >{language.signText}</h1>
-                    <div className='main__ready__button'  >{language.signUp}</div>
+                    <Link to='login'>
+                        <div className='main__ready__button'  >{language.signUp}</div>
+                    </Link>
                 </div>
             </div>
         </PageSkeleton>

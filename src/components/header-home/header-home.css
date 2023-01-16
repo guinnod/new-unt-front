@@ -5,9 +5,55 @@
 .header-home__portrait {
     width: 6rem;
     border-radius: 1rem;
-    cursor: pointer;
 }
 
 .header-home__name {
     font-size: 3rem;
+}
+
+.header-home__profile {
+    border-radius: 1rem;
+    padding: 1rem 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-home__profile:hover {
+    background-color: #22262d;
+}
+
+.profile-drop {
+    position: absolute;
+    top: 10rem;
+    background-color: #22262D;
+    border-radius: 1rem;
+    z-index: 1;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    white-space: normal;
+    margin: 0 !important;
+    animation: dropDown 1s;
+    overflow: hidden;
+    height: 20rem;
+}
+
+.profile-drop li {
+    margin: 0 2rem 0 0;
+}
+
+.profile-drop ul {
+    margin: 1rem 0;
+}
+
+.profile-drop ul:hover {
+    background-color: black;
+}
+
+@keyframes dropDown {
+    from {
+        height: 0;
+    }
+    to {
+        height: 20rem;
+    }
 }

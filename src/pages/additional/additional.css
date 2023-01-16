@@ -1,4 +1,19 @@
-.additional__anchor {}
+.additional__root {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.additional__anchor {
+    background-color: #22262D;
+    border-radius: 2rem;
+    padding: 2rem 5rem;
+    width: 60%;
+}
+
+.additional__anchor > form {
+    margin: 2rem 0 0 0;
+}
 
 .additional__part {
     display: flex;
@@ -8,6 +23,11 @@
 .additional__input {
     font-size: 2rem;
     margin: 1rem;
+    width: 30rem;
+}
+
+.additional__anchor textarea {
+    height: 10rem;
 }
 
 .additional__media {
@@ -19,4 +39,14 @@
     top: 0;
     opacity: 0;
     cursor: pointer;
+}
+
+.additional__submit {
+    align-self: flex-end;
+    font-size: inherit;
+    margin: 1rem;
+}
+
+.additional__textarea--long {
+    width: 60rem;
 }
