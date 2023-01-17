@@ -1,0 +1,13 @@
+.result-topic__anchor {
+    display: flex;
+}
+
+.result-topic__block {
+    background-color: #E2E5E9;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: black;
+    width: max-content;
+    font-size: 2.5rem;
+    margin: 1rem;
+}

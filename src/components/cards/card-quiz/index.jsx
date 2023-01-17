@@ -1,5 +1,5 @@
 import { Card } from '../card';
-import { LazyImage } from '../lazy-image';
+import { LazyImage } from '../../lazy-image';
 import './card-quiz.css';
 export const CardQuiz = ({ currentQuestion, userAnswer, current, selectOption }) => {
     return (

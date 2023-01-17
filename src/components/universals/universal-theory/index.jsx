@@ -1,9 +1,9 @@
-import { CardTheory } from "../../components/card-theory";
-import { PageSkeleton } from '../../components/page-skeleton';
-import { LazyImage } from '../../components/lazy-image';
-import { repeat, shuffle } from "../../media";
+import { CardTheory } from "../../cards/card-theory";
+import { PageSkeleton } from '../../page-skeleton';
+import { LazyImage } from '../../lazy-image';
+import { repeat, shuffle } from "../../../media";
 import { useDispatch, useSelector } from "react-redux";
-import { theoryActions } from "../../store/theory";
+import { theoryActions } from "../../../store/theory";
 import './universal-theory.css';
 
 export const UniversalTheory = () => {

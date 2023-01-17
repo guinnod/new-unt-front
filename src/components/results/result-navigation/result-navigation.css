@@ -1,0 +1,25 @@
+.result-navigation__anchor {
+    display: grid;
+    
+}
+
+.result-navigation__block {
+    background-color: #00E022;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: max-content;
+    height: 8rem;
+}
+
+.result-navigation__block--red {}
+
+.result-navigation__block--yellow {}
+
+.result-navigation__number {
+    background-color: white;
+    color: black;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 1rem 2rem;
+    width: max-content;
+}

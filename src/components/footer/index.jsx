@@ -1,5 +1,5 @@
 import { instagram, linkedin, telegram } from "../../media";
-import { Header } from "../header";
+import { Header } from "../headers/header";
 import './footer.css';
 export const Footer = () => {
     return (

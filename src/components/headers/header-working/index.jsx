@@ -1,8 +1,8 @@
 import { useState } from 'react';
 // import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { calculator, headphones } from '../../media';
-import Calculator from '../calculator';
+import { calculator, headphones } from '../../../media';
+import Calculator from '../../calculator';
 import { Header } from '../header';
 import './header-working.css';
 
@@ -17,6 +17,7 @@ export const HeaderWorking = ({ timeLeft, countDown }) => {
         seconds: Math.floor((timeLeft / 1000) % 60),
     }
     const [showCalculator, setShowCalculator] = useState(false);
+    const [musicActive, setMusicActive] = useState(false);
     // useEffect(() => {
     //     setTimeout(() => {
     //         countDown();
@@ -40,6 +41,16 @@ export const HeaderWorking = ({ timeLeft, countDown }) => {
             element.onmouseup = null;
         };
     }
+    const playAudio = () => {
+        if (document.getElementById('lofiMusic').paused) {
+            document.getElementById('lofiMusic').play();
+            setMusicActive(true);
+        }
+        else {
+            document.getElementById('lofiMusic').pause();
+            setMusicActive(false);
+        }
+    }
     return (
         <Header right={
             <div>
@@ -59,7 +70,10 @@ export const HeaderWorking = ({ timeLeft, countDown }) => {
                             : <></>}
                     </div>
                 </div>
-                <img className='header-working__image' src={headphones} alt="headphones" />
+                <img className={musicActive ? 'header-working__image header-working__image--active' : 'header-working__image'} src={headphones} alt="headphones" onClick={playAudio} />
+                <audio id='lofiMusic'>
+                    <source src='https://raw.githubusercontent.com/guinnod/lofimus/main/videoplaybac1k%20(mp3cut%20(mp3cut.net).mp3'></source>
+                </audio>
             </div>
         } />
     );

@@ -8,8 +8,9 @@ import { Additional } from './pages/additional';
 import { Profile } from './pages/profile';
 import Protected from './protected';
 import { getRoutes } from './data/consts';
-import { universalRoutes } from './universals/universal-routes';
+import { universalRoutes } from './components/universals/universal-routes';
 import './App.css';
+import { Result } from './pages/result';
 
 function App() {
   const language = useSelector((state) => {
@@ -37,6 +38,7 @@ function App() {
             {universalRoutes(getRoutes('theory', language))}
           </Route>
         </Route>
+        <Route path='/*' element={<Result />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { languageActions } from '../../store/language';
+import { languageActions } from '../../../store/language';
 import { Header } from '../header';
 import './header-main.css';
 

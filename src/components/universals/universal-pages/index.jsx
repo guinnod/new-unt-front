@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { TopText } from '../../components/top-text';
+import { TopText } from '../../top-text';
 import './universal-pages.css';
 export const UniversalPages = ({ content }) => {
     let navigate = useNavigate();

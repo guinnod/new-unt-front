@@ -3,6 +3,12 @@
     cursor: pointer;
 }
 
+.header-working__image--active {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-image: radial-gradient(rgba(255, 0, 0, 1), black);
+}
+
 .header-working__time {
     font-size: 2.5rem;
     font-weight: 700;

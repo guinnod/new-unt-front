@@ -1,8 +1,8 @@
-import { Navigator } from "../../components/navigator";
+import { Navigator } from "../../navigator";
 import { useDispatch, useSelector } from "react-redux";
-import { CardQuiz } from "../../components/card-quiz";
-import { quizActions } from '../../store/quiz';
-import { PageSkeleton } from "../../components/page-skeleton";
+import { CardQuiz } from "../../cards/card-quiz";
+import { quizActions } from '../../../store/quiz';
+import { PageSkeleton } from "../../page-skeleton";
 export const UniversalTesting = () => {
 
     const quiz = useSelector(state => state.quiz);

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { deafultUser } from "../../media";
+import { deafultUser } from "../../../media";
 import { Header } from "../header";
 import './header-home.css';
 export const HeaderHome = () => {
