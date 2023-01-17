@@ -32,7 +32,8 @@
     font-size: 2.5rem;
     white-space: normal;
     margin: 0 !important;
-    animation: dropDown 1s;
+    animation: rotateMenu 1000ms ease-in-out forwards;
+    transform-origin: top center;
     overflow: hidden;
     height: 20rem;
 }
@@ -49,11 +50,16 @@
     background-color: black;
 }
 
-@keyframes dropDown {
-    from {
-        height: 0;
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg);
     }
-    to {
-        height: 20rem;
+
+    70% {
+        transform: rotateX(20deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
     }
 }

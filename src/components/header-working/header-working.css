@@ -1,8 +1,20 @@
 .header-working__image {
     width: 5rem;
+    cursor: pointer;
 }
 
 .header-working__time {
     font-size: 2.5rem;
     font-weight: 700;
+}
+
+.header-working__calculator {
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    cursor: grab;
+}
+
+.header-working__calculator:active {
+    cursor: grabbing;
 }
