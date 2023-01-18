@@ -10,7 +10,6 @@
 
 .card-theory__anchor {
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     background-color: #F1F3F6;
     display: flex;
     flex-direction: column;

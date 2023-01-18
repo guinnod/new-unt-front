@@ -8,7 +8,6 @@ html {
 body {
     cursor: default;
     user-select: none;
-    -webkit-user-select: none;
     margin: 0;
     box-sizing: border-box;
     color: white;
