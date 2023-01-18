@@ -1,13 +1,11 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { deafultUser } from "../../../media";
 import { Header } from "../header";
 import './header-home.css';
 export const HeaderHome = () => {
-    const language = useSelector((state) => {
-        return state.language.value.header;
-    });
+    const language = useSelector(state => state.language.value.header);
+    const auth = useSelector(state => state.auth);
     const [profileDrop, setProfileDrop] = useState(false);
     return (
         <div>
@@ -20,11 +18,11 @@ export const HeaderHome = () => {
             }
                 right={
                     <div className='header-home__profile' onClick={() => { setProfileDrop(!profileDrop) }}>
-                        <img className='header-home__portrait' src={deafultUser} alt="profile" />
-                        <div className='header__button header-home__name'>Tauekel</div>
+                        <img className='header-home__portrait' src={auth.profilePhoto} alt="profile" />
+                        <div className='header__button header-home__name'>{auth.name}</div>
                         {profileDrop ?
                             <div className='profile-drop'>
-                                <Link to='./profile'>
+                                <Link to='/home/profile'>
                                     <ul className='ilList'>
                                         <li>{language.myprofile}</li>
                                     </ul></Link>

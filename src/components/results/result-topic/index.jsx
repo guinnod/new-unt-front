@@ -1,11 +1,11 @@
 import { useSelector } from 'react-redux';
-import { ResultCard } from '../result-card';
+import { CardDark } from '../../cards/card-dark';
 import './result-topic.css';
 export const ResultTopic = ({ topics }) => {
 
     const language = useSelector(state => state.language.value.result);
     return (
-        <ResultCard>
+        <CardDark>
             <div>
                 <div>{language.topics}</div>
                 <div className='result-topic__anchor'>
@@ -14,6 +14,6 @@ export const ResultTopic = ({ topics }) => {
                     })}
                 </div>
             </div>
-        </ResultCard>
+        </CardDark>
     );
 };

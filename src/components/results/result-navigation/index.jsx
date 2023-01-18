@@ -1,11 +1,11 @@
 import { useSelector } from 'react-redux';
-import { ResultCard } from '../result-card';
+import { CardDark } from '../../cards/card-dark';
 import './result-navigation.css';
 export const ResultNavigation = ({ answers }) => {
     const language = useSelector(state => state.language.value.result);
 
     return (
-        <ResultCard>
+        <CardDark>
             <div>
                 <div>{language.navigation}</div>
                 <div className='result-navigation__anchor'>
@@ -19,6 +19,6 @@ export const ResultNavigation = ({ answers }) => {
                     })}
                 </div>
             </div>
-        </ResultCard>
+        </CardDark>
     );
 };
