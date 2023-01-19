@@ -17,6 +17,11 @@
     font-weight: 800;
 }
 
+.universal-pages__card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
 .universal-pages__image {
     width: inherit;
     height: 20rem;

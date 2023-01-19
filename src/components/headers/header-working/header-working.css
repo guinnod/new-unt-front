@@ -3,6 +3,11 @@
     cursor: pointer;
 }
 
+.header-working__image:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
 .header-working__image--active {
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -24,3 +29,4 @@
 .header-working__calculator:active {
     cursor: grabbing;
 }
+

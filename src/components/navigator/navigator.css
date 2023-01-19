@@ -19,6 +19,13 @@
     min-width: 4.2rem;
 }
 
+.navigator__block:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+
 .navigator__block--active {
     background-color: #EC008C;
     color: white;

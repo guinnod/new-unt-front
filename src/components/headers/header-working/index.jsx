@@ -29,6 +29,12 @@ export const HeaderWorking = ({ timeLeft, countDown }) => {
         let shiftY = event.clientY - element.getBoundingClientRect().top;
         moveAt(event.pageX, event.pageY);
         function moveAt(pageX, pageY) {
+            if (pageX - shiftX > window.innerWidth - 400) {
+                return;
+            }
+            if (pageY - shiftY > window.innerHeight) {
+                return;
+            }
             element.style.left = pageX - shiftX + 'px';
             element.style.top = pageY - shiftY + 'px';
         }
@@ -64,7 +70,7 @@ export const HeaderWorking = ({ timeLeft, countDown }) => {
                 <div className='header__button header__button--pink'>{language.quizHeader.finish}</div>
                 <div>
                     <img className='header-working__image' src={calculator} alt="calculator" onClick={() => { setShowCalculator(!showCalculator) }} />
-                    <div id='calculator' className='header-working__calculator' onMouseDown={(event) => { changePosition(event) }}>
+                    <div id='calculator' className='header-working__calculator' onMouseDownCapture={(event) => { changePosition(event) }}>
                         {showCalculator ?
                             <Calculator />
                             : <></>}

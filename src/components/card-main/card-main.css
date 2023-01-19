@@ -36,22 +36,3 @@
     height: 125%;
 }
 
-@keyframes zoomImage {
-    from {
-        height: 100%;
-    }
-
-    to {
-        height: 125%;
-    }
-}
-
-@keyframes outImage {
-    from {
-        height: 125%;
-    }
-
-    to {
-        height: 100%;
-    }
-}
