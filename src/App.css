@@ -3,6 +3,7 @@
 html {
     font-size: 62.35%;
     /* font-size: 0.5vw; */
+    /* font-size: 8px; */
 }
 
 body {
@@ -10,6 +11,8 @@ body {
     user-select: none;
     margin: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     color: white;
     background: #0d0f12;
     font-family: 'Roboto';

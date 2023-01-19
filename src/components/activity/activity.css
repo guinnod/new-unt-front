@@ -26,7 +26,7 @@
 .activity__progress--multiple::-moz-progress-bar {
     background-color: red !important;
 }
-/* 
+
 .activity__progress::-webkit-progress-bar {
     background-color: #039603 !important;
 }
@@ -61,4 +61,4 @@
 
 .activity__progress--multiple::-ms-progress-bar {
     background-color: red !important;
-} */
+}

@@ -1,7 +1,7 @@
 import { Card } from '../card';
 import { LazyImage } from '../../lazy-image';
 import './card-quiz.css';
-export const CardQuiz = ({ currentQuestion, userAnswer, current, selectOption }) => {
+export const CardQuiz = ({ currentQuestion, userAnswer, current, selectOption, answers }) => {
     return (
         <Card>
             <div className='card-quiz__anchor'>
@@ -15,8 +15,19 @@ export const CardQuiz = ({ currentQuestion, userAnswer, current, selectOption })
                 </div>
                 {currentQuestion.options.map((e, index) => {
                     const labelClass = userAnswer.includes(index) ? 'card-quiz__option__label--selected' : '';
+                    let backgroundOption = '';
+                    if (answers) {
+                        if (answers[current].value.includes(index)) {
+                            backgroundOption = 'card-quiz__option--correct';
+                            if (userAnswer.includes(index)) {
+                                backgroundOption += ' card-quiz__option--correct--user'
+                            }
+                        } else if (userAnswer.includes(index)) {
+                            backgroundOption = 'card-quiz__option--incorrect';
+                        }
+                    }
                     return (
-                        <div className='card-quiz__option__anchor' onClick={() => { selectOption(current, index) }} key={index}>
+                        <div className={`card-quiz__option__anchor ${backgroundOption}`} onClick={() => { if (!answers) { selectOption(current, index); } }} key={index}>
                             <div className={`card-quiz__option__label ${labelClass}`}>{String.fromCharCode(65 + index)}</div>
                             <div className='card-quiz__option__text'>{e}</div>
                         </div>

@@ -30,3 +30,15 @@
     color: white;
     background-color: #EC008C;
 }
+
+.card-quiz__option--correct {
+    background-color: #6fe883;
+}
+
+.card-quiz__option--correct--user {
+    border-color: #EC008C;
+}
+
+.card-quiz__option--incorrect {
+    background-color: #f8797b;
+}

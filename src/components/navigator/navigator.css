@@ -28,3 +28,21 @@
     background-color: black;
     color: white;
 }
+
+.navigator__block--active--checking {
+    border: 3px white solid;
+}
+
+.navigator__block--full {
+    background-color: #00E022;
+    color: white;
+}
+
+.navigator__block--half {
+    background-color: #FCDC00;
+}
+
+.navigator__block--null {
+    background-color: red;
+    color: white;
+}

@@ -19,12 +19,14 @@ export const UniversalTesting = () => {
         dispatch(quizActions.countDown());
     }
 
+    const answers = quiz.answers;
+
 
     return (
         <PageSkeleton header='working' timeLeft={quiz.timeLeft} countDown={countDown}>
             <div>
-                <Navigator userAnswers={quiz.userAnswers} current={current} toQuestion={toQuestion} />
-                <CardQuiz currentQuestion={quiz.questions[current]} userAnswer={userAnswers[current]} current={current} selectOption={selectOption} />
+                <Navigator userAnswers={quiz.userAnswers} current={current} toQuestion={toQuestion} answers={answers}/>
+                <CardQuiz currentQuestion={quiz.questions[current]} userAnswer={userAnswers[current]} current={current} selectOption={selectOption} answers={answers}/>
             </div>
         </PageSkeleton>
     );

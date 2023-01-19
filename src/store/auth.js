@@ -8,8 +8,13 @@ const initialState = {
     maxScore: 0,
     simple: 400,
     context: 100,
-    multiple: 200, 
-    solved: 700
+    multiple: 200,
+    solved: 700,
+    days: [
+        { date: '2022-10-01', count: 13 },
+        { date: '2022-11-22', count: 78 },
+        { date: '2023-01-30', count: 1225 },
+    ]
 };
 const authSlice = createSlice({
     name: "auth",

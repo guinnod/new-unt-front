@@ -3,12 +3,24 @@ import kzbase from '../data/base.json';
 const questions = kzbase;
 const userAnswers = new Array(35);
 userAnswers.fill("");
-
+const answers = new Array(35);
+for (let i = 0; i < answers.length; i++) {
+    answers[i] = { value: `${i % 4}`, description: 'full' };
+    if (i > 25) {
+        answers[i].value += `${i % 3}`;
+        if (i % 4 === 0) {
+            answers[i].description = 'half'
+        } else if (i % 3 === 0) {
+            answers[i].description = 'null'
+        }
+    }
+}
 const initialState = {
     questions: questions,
     userAnswers: userAnswers,
     current: 0,
-    timeLeft: 6000000
+    timeLeft: 6000000,
+    answers: answers
 }
 
 const quizSlice = createSlice({
@@ -32,12 +44,14 @@ const quizSlice = createSlice({
                 }
                 state.userAnswers[index] = temp;
             } else {
-                if (index < 25) {
-                    state.userAnswers[index] = option;
+                if (state.userAnswers[index].length < 3) {
+                    if (index < 25) {
+                        state.userAnswers[index] = option;
+                    } else {
+                        state.userAnswers[index] += option;
+                    }
                 }
-                state.userAnswers[index] += option;
             }
-
         },
         countDown(state) {
             state.timeLeft -= 1000;
