@@ -10,7 +10,6 @@ export const Main = () => {
         <PageSkeleton>
             <div className="main__anchor">
                 <div className='main__text--top'>
-
                     <div className='main__news center'>
                         {language.newSubject}
                     </div>
@@ -22,7 +21,6 @@ export const Main = () => {
                             {language.bigText2}
                         </div>
                     </div>
-
                     <h1>{language.readyTo}</h1>
                     <h4>
                         {language.firstStep1}
@@ -65,7 +63,7 @@ export const Main = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="main__optional__news__root">
                         <div className="main__optional--header">
                             {language.news}<span className='main__optional--header--sub'>{language.beOn}</span>
                         </div>

@@ -17,11 +17,7 @@ body {
     background: #0d0f12;
     font-family: 'Roboto';
     white-space: nowrap;
-    font-size: 2rem;
-}
-
-img {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 a {
