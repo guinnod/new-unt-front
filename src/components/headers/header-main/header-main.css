@@ -1,6 +1,6 @@
 .header-main__flag {
-    width: 6rem;
-    height: 3.7rem;
-    border-radius: 0.5rem;
+    width: 6em;
+    height: 3.7em;
+    border-radius: 0.5em;
     cursor: pointer;
 }

@@ -61,12 +61,12 @@
     transform: rotate(180deg);
     width: 1rem;
     margin: 1rem 0.5rem;
-    font-size: 1.5rem;
 }
 
 .main__optional {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .main__optional--header {
@@ -74,11 +74,11 @@
     border-bottom: #000000 1px solid;
     width: 35rem;
     padding: 0.5rem 1rem;
-    margin: 1.2rem 0;
+    margin: 1.2rem 1rem;
 }
 
 .main__optional__news__root {
-    width: 35rem;
+    width: 38rem;
 }
 
 .main__optional--header--sub {
@@ -178,4 +178,161 @@
     cursor: pointer;
     margin: 2rem;
     font-size: 1.3rem;
+}
+
+@media screen and (max-width: 850px) {
+    .main__text--big {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main__text--big {
+        font-size: 3rem;
+    }
+    .main__news {
+        padding: 0.7rem 1.9rem 0.7rem 0.7rem;
+        margin: 0 0 1.5rem 0;
+        font-size: 0.8rem;
+    }
+    .main__text--top {
+        padding: 3rem 4rem;
+    }
+    .main__text--top h1 {
+        margin: 2rem 0 0 0;
+        font-size: 1.5rem;
+    }
+
+    .main__text--top h4 {
+        font-size: 1.2rem;
+    }
+
+    .main__text--span {
+        padding: 0.4rem;
+        margin: 0 0.2rem;
+    }
+    
+    #main__input {
+        font-size: 1rem;
+    }
+    
+    .main__input {
+        width: 35rem;
+        padding: 0 0.3rem;
+    }
+
+    .main__input__image {
+        width: 0.6rem;
+        margin: 0.8rem 0.3rem;
+    }
+    
+    .main__optional--header {
+        font-size: 1.5rem;
+        width: 23rem;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0.8rem;
+    }
+    
+    .main__optional__news__root {
+        width: 28rem;
+    }
+    
+    .main__optional--header--sub {
+        font-size: 0.8rem;
+    }
+    
+    
+    .main__learn__block__anchor {
+        width: 24rem;
+    }
+    
+    .main__learn__block__anchor a {
+        font-size: 0.8rem;
+    }
+    
+    .main__learn__block__text {
+        height: 4.2rem;
+        white-space: normal;
+    }
+    
+    .main__learn__block__text>div:first-child {
+        font-size: 1.2rem;
+    }
+    
+    .main__learn__block__text>div:last-child {
+        font-size: 1rem;
+    }
+    
+    .main__learn__img--circled {
+        width: 4rem;
+        margin: 1rem;
+    }
+    
+    .main__learn__img--medium {
+        width: 6rem;
+    }
+    
+    .main__optional__news {
+        padding: 1rem;
+    }
+    
+    .main__optional__news>a {
+        font-size: 1.4rem;
+    }
+    
+    .main__optional__news__content {
+        font-size: 1rem;
+    }
+    
+    .main__ready__anchor {
+        padding: 2.5rem;
+    }
+    
+    .main__ready__anchor h1 {
+        font-size: 1.3rem;
+    }
+    
+    .main__ready {
+        width: 30rem;
+    }
+    
+    .main__ready__button {
+        padding: 0.5rem 1rem;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main__text--big {
+        font-size: 2.2rem;
+    }
+    .main__news {
+        padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+        margin: 0 0 1.2rem 0;
+        font-size: 0.6rem;
+    }
+    .main__text--top {
+        padding: 2rem 3rem;
+    }
+    .main__text--top h1 {
+        margin: 1rem 0 0 0;
+        font-size: 1.2rem;
+    }
+
+    .main__text--top h4 {
+        font-size: 1.2rem;
+        width: 25rem;
+        white-space: normal;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .main__text--span {
+        padding: 0.3rem;
+    }
+    
+    .main__input {
+        width: 25rem;
+    }
 }

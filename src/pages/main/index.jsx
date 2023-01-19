@@ -30,7 +30,7 @@ export const Main = () => {
 
                     <div className='main__input'>
                         <img className='main__input__image' src={forinput} alt='input'></img>
-                        <input id="main__input" tabIndex={0} onKeyDown={(event) => { console.log(event, event.target.value) }} autoFocus>
+                        <input id="main__input" tabIndex={0} onKeyDown={(event) => {  }} autoFocus>
                         </input>
                     </div>
                 </div>

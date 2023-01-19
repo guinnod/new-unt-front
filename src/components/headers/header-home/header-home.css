@@ -1,19 +1,19 @@
 .header-home__left {
-    margin: 0 0 0 3rem;
+    margin: 0 0 0 3em;
 }
 
 .header-home__portrait {
-    width: 6rem;
-    border-radius: 1rem;
+    width: 6em;
+    border-radius: 1em;
 }
 
 .header-home__name {
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .header-home__profile {
-    border-radius: 1rem;
-    padding: 1rem 0;
+    border-radius: 1em;
+    padding: 1em 0;
     cursor: pointer;
     position: relative;
 }
@@ -24,26 +24,26 @@
 
 .profile-drop {
     position: absolute;
-    top: 10rem;
+    top: 10em;
     background-color: #22262D;
-    border-radius: 1rem;
+    border-radius: 1em;
     z-index: 1;
-    padding: 1rem 0;
-    font-size: 2.5rem;
+    padding: 1em 0;
+    font-size: 2.5em;
     white-space: normal;
     margin: 0 !important;
     animation: rotateMenu 1000ms ease-in-out forwards;
     transform-origin: top center;
     overflow: hidden;
-    height: 20rem;
+    height: 20em;
 }
 
 .profile-drop li {
-    margin: 0 2rem 0 0;
+    margin: 0 2em 0 0;
 }
 
 .profile-drop ul {
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 
 .profile-drop ul:hover {

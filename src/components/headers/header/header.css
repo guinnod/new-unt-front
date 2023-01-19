@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 1em;
+    font-size: 1rem;
 }
 
 .header__part:first-child {
@@ -16,11 +17,11 @@
 }
 
 .header__part > div > * {
-    margin: 0 1rem;
+    margin: 0 1em;
 }
 
 .header__button {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 550;
     cursor: pointer;
 }
@@ -31,9 +32,21 @@
 }
 
 .header__button--pink {
-    font-size: 1rem;
+    font-size: 1em;
     background-color: #EC008C;
     border-radius: 0.3rem;
-    padding: 1rem 2rem;
+    padding: 1em 2rem;
     width: max-content;
+}
+
+@media screen and (max-width: 550px) {
+    .header__anchor {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header__anchor {
+        font-size: 0.6rem;
+    }
 }

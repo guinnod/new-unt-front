@@ -4,11 +4,11 @@
 }
 
 .logo__img {
-    margin: 1rem;
-    width: 5rem;
+    margin: 1em;
+    width: 5em;
 }
 
 .logo__text {
     font-weight: 550;
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
