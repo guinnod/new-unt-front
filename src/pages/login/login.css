@@ -1,19 +1,27 @@
 .login__anchor {
     display: flex;
     justify-content: space-around;
-    padding: 16.5rem 0;
-    font-size: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+
+.login__anchor > div {
+    margin: 2rem;
 }
 
 .login__text {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .login__text--big {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
-    margin: 1.5rem 0;
+    margin: 0.5rem 0;
 }
 
 .login__text--big--yellow {
@@ -32,18 +40,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 
 .login__card>* {
-    margin: 1.5rem 0;
+    margin: 0.75rem 0;
 }
 
 .login__anchor input {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 
@@ -53,10 +61,11 @@
     background-color: white;
     color: black;
     width: max-content;
-    padding: 0.3rem 1rem;
-    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 }
 
 .login__card__button img {
+    width: 2rem;
     margin: 0 1rem 0 0;
 }

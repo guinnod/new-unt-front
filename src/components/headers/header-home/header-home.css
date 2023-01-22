@@ -1,14 +1,10 @@
-.header-home__left {
-    margin: 0 0 0 3rem;
-}
-
 .header-home__portrait {
-    width: 6em;
+    width: 4rem;
     border-radius: 1rem;
 }
 
 .header-home__name {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .header-home__profile {
@@ -24,7 +20,7 @@
 
 .profile-drop {
     position: absolute;
-    top: 10em;
+    top: 10rem;
     background-color: #22262D;
     border-radius: 1rem;
     z-index: 1;
@@ -61,5 +57,17 @@
 
     100% {
         transform: rotateX(0deg);
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .header-home__left {
+        margin: 0 0 0 3rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header-home__left {
+        display: none !important;
     }
 }

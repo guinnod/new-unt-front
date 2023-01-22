@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500');
 
 html {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 body {
@@ -38,36 +38,17 @@ textarea::placeholder {
     font-family: 'Roboto';
 }
 
-@keyframes zoomImage {
-    from {
-        height: 100%;
-    }
-
-    to {
-        height: 125%;
-    }
-}
-
-@keyframes outImage {
-    from {
-        height: 125%;
-    }
-
-    to {
-        height: 100%;
-    }
-}
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     html {
         font-size: 10px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     html {
         font-size: 8px;
     }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     html {
         font-size: 6px;
     }

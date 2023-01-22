@@ -23,16 +23,16 @@ export const HeaderHome = () => {
                         {profileDrop ?
                             <div className='profile-drop'>
                                 <Link to='/home/profile'>
-                                    <ul className='ilList'>
+                                    <ul>
                                         <li>{language.myprofile}</li>
                                     </ul></Link>
                                 <a href='w' target='_blank' rel="norefferer">
-                                    <ul className='ilList'>
+                                    <ul>
                                         <li>{language.connectWith}</li>
                                     </ul></a>
                                 <hr></hr>
                                 <Link to=''>
-                                    <ul className='ilList'>
+                                    <ul>
                                         <li>{language.logOut}</li>
                                     </ul></Link>
                             </div> : <></>}
