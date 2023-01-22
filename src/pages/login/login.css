@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     padding: 16.5rem 0;
+    font-size: 1em;
 }
 
 .login__text {
@@ -26,6 +27,7 @@
 .login__text ul {
     margin: 0;
 }
+
 .login__card {
     display: flex;
     flex-direction: column;
@@ -35,7 +37,7 @@
     padding: 0 4rem;
 }
 
-.login__card > * {
+.login__card>* {
     margin: 1.5rem 0;
 }
 
