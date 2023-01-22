@@ -37,7 +37,7 @@
 }
 
 .navigator__block--active--checking {
-    border: 3px white solid;
+    outline: 3px white solid;
 }
 
 .navigator__block--full {

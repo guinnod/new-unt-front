@@ -19,7 +19,7 @@ export const HeaderHome = () => {
                 right={
                     <div className='header-home__profile' onClick={() => { setProfileDrop(!profileDrop) }}>
                         <img className='header-home__portrait' src={auth.profilePhoto} alt="profile" />
-                        <div className='header__button header-home__name'>{auth.name}</div>
+                        <div className='header-home__name'>{auth.name}</div>
                         {profileDrop ?
                             <div className='profile-drop'>
                                 <Link to='/home/profile'>
@@ -31,7 +31,7 @@ export const HeaderHome = () => {
                                         <li>{language.connectWith}</li>
                                     </ul></a>
                                 <hr></hr>
-                                <Link to=''>
+                                <Link to='/'>
                                     <ul>
                                         <li>{language.logOut}</li>
                                     </ul></Link>
