@@ -1,18 +1,18 @@
 .additional__root {
     display: flex;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 1rem 0;
+    white-space: normal;
 }
 
 .additional__anchor {
     background-color: #22262D;
     border-radius: 2rem;
-    padding: 2rem 5rem;
-    width: 60%;
+    padding: 1rem 2rem;
 }
 
-.additional__anchor > form {
-    margin: 2rem 0 0 0;
+.additional__anchor>form {
+    margin: 1rem 0 0 0;
 }
 
 .additional__part {
@@ -21,13 +21,13 @@
 }
 
 .additional__input {
-    font-size: 2rem;
-    margin: 1rem;
+    font-size: 1.2rem;
+    margin: 0.75rem;
     width: 30rem;
 }
 
 .additional__anchor textarea {
-    height: 10rem;
+    height: 8rem;
 }
 
 .additional__media {
@@ -36,17 +36,49 @@
 
 .additional__media--hidden {
     position: absolute;
-    top: 0;
+    top: -1rem;
+    left: 0;
     opacity: 0;
     cursor: pointer;
+    width: 30rem;
+    margin: 1rem;
 }
 
 .additional__submit {
     align-self: flex-end;
-    font-size: inherit;
+    font-size: 1.2rem;
     margin: 1rem;
+    border-radius: 0.5rem;
 }
 
 .additional__textarea--long {
     width: 60rem;
+}
+
+@media only screen and (max-width: 1250px) {
+    .additional__part {
+        flex-direction: column;
+        align-items: center;
+    }
+    .additional__input {
+        width: 60rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .additional__part {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .additional__input {
+        width: 27rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .additional__part {
+        flex-direction: column;
+        align-items: center;
+    }
 }

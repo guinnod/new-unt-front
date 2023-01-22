@@ -2,12 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
     padding: 5rem 0;
-}
-
-.login__anchor > div {
-    margin: 2rem;
 }
 
 .login__text {
@@ -68,4 +63,15 @@
 .login__card__button img {
     width: 2rem;
     margin: 0 1rem 0 0;
+}
+
+@media only screen and (max-width: 650px) {
+    .login__anchor {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .login__anchor > div {
+        margin: 2rem 0;
+    }
 }

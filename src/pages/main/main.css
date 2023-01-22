@@ -57,6 +57,10 @@
     padding: 0 0.5rem;
 }
 
+#main__input:focus {
+    outline: none;
+}
+
 .main__input__image {
     transform: rotate(180deg);
     width: 1rem;
@@ -72,7 +76,7 @@
 .main__optional--header {
     font-size: 2.2rem;
     border-bottom: #000000 1px solid;
-    width: 35rem;
+    width: 36.5rem;
     padding: 0.5rem 1rem;
     margin: 1.2rem 1rem;
 }
@@ -181,10 +185,11 @@
 }
 
 @media screen and (max-width: 400px) {
-   .main__text--big {
-    font-size: 4rem;
-   }
-.main__input {
-    width: 45rem;
-}
+    .main__text--big {
+        font-size: 4rem;
+    }
+
+    .main__input {
+        width: 45rem;
+    }
 }
