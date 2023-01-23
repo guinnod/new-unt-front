@@ -1,13 +1,13 @@
 .profile__anchor {
     display: flex;
     font-size: 1.4rem;
+    
 }
 
 .profile__sidebar {
     background-color: #22262D;
     padding: 4rem 2rem;
-    height: 40rem;
-
+    height: 41rem;
 }
 
 .profile__photo {
