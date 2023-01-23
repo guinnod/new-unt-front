@@ -10,6 +10,9 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    width: 30%;
+    height: 43rem;
+    padding: 3rem 0;
 }
 
 .theory__part:hover {

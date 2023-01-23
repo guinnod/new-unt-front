@@ -1,8 +1,7 @@
-import { useState } from 'react';
 import './card-theory.css';
-export const CardTheory = ({ question, answer }) => {
+export const CardTheory = ({ question, answer, flip, setFlip }) => {
     
-    const [flip, setFlip] = useState(true);
+    
     return (
         <div className={flip ? 'card-theory__root' : 'card-theory__root card-theory__anchor--flipped'}
             onClick={() => {

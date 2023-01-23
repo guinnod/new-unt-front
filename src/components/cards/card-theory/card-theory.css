@@ -1,8 +1,9 @@
 .card-theory__root {
     transition: transform 1s;
     transform-style: preserve-3d;
-    width: 40rem;
-    height: 50rem;
+    width: 40%;
+    height: 40rem;
+    margin: 3rem 0;
     font-size: 2rem;
     position: relative;
     cursor: pointer;
@@ -20,6 +21,7 @@
     width: 100%;
     white-space: normal;
     border-radius: 2rem;
+    padding: 1.5rem;
 }
 
 .card-theory__buttons {
@@ -44,14 +46,4 @@
 .card-theory__text {
     text-align: center;
     animation: textAnimate 1s;
-}
-
-@keyframes textAnimate {
-    from {
-        font-size: 1rem;
-    }
-
-    to {
-        font-size: 2rem;
-    }
 }
