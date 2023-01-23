@@ -27,9 +27,11 @@ export const Profile = () => {
                     <p>{language.name}: {auth.name}</p>
                     <p>{language.max}: {auth.maxScore}</p>
                 </div>
-                <div>
-                    <Activity maxSolved={maxSolved} solved={solved} types={types} />
-                    <Tracker days={auth.days} />
+                <div className='profile__content'>
+                    <div>
+                        <Activity maxSolved={maxSolved} solved={solved} types={types} />
+                        <Tracker days={auth.days} text={language.progress}/>
+                    </div>
                 </div>
             </div>
         </PageSkeleton>

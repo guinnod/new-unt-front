@@ -1,19 +1,36 @@
 .activity__anchor {
     display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.activity__circle {
+    width: 12rem;
+    height: 12rem;
+    margin: 0 1rem 0 0;
 }
 
 .activity__circle__text {
     text-align: center;
     position: relative;
-    top: -50%;
+    top: -65%;
+}
+
+.activity__progress__anchor {
+    font-size: 1rem;
+    height: max-content;
 }
 
 .activity__progress {
-    width: 50rem;
+    width: 30rem;
     background-color: #eeeeee;
-    height: 0.75rem;
+    height: 0.4rem;
     border-radius: 1rem;
+    margin: 1rem 0;
+    border: none;
 }
+
+
 
 .activity__progress::-moz-progress-bar {
     background-color: #039603 !important;
@@ -61,4 +78,20 @@
 
 .activity__progress--multiple::-ms-progress-bar {
     background-color: red !important;
+}
+
+@media only screen and (max-width: 550px){
+    .activity__progress__anchor{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 375px){
+   .activity__anchor {
+    flex-direction: column;
+   }
+
+   .activity__circle {
+    margin: 1rem;
+   }
 }

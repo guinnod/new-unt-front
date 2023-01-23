@@ -1,3 +1,9 @@
-.tracker__anchor { 
-    
+.tracker__anchor  > div { 
+    overflow: scroll;
+    min-width: 400px;
+}
+
+
+.tracker__text {
+    margin: 0 0 1rem 1rem;
 }

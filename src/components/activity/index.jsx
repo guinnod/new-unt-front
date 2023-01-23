@@ -9,7 +9,7 @@ export const Activity = ({ maxSolved, solved, types }) => {
     return (
         <CardDark>
             <div className='activity__anchor'>
-                <div>
+                <div className='activity__circle'>
                     <CircularProgressbar
                         value={(solved / maxSolved.overall) * 100}
                         styles={buildStyles({
@@ -25,7 +25,7 @@ export const Activity = ({ maxSolved, solved, types }) => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className='activity__progress__anchor'>
                     {types ? types.map((e, index) => {
                         return (
                             <div key={index}>

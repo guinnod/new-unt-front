@@ -1,7 +1,49 @@
 .profile__anchor {
     display: flex;
+    font-size: 1.4rem;
 }
 
 .profile__sidebar {
     background-color: #22262D;
+    padding: 4rem 2rem;
+    height: 40rem;
+
+}
+
+.profile__photo {
+    border-radius: 50%;
+    width: 8rem;
+}
+
+.profile__content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile__content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile__content >div > div {
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width: 750px) {
+    .profile__anchor {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .profile__sidebar {
+        border-radius: 1.5rem;
+        height: max-content;
+    }
+
+    .profile__content > div, .profile__sidebar {
+        width: 80%;
+    }
 }
