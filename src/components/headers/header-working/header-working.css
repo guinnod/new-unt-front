@@ -1,5 +1,5 @@
 .header-working__image {
-    width: 5rem;
+    width: 4rem;
     cursor: pointer;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .header-working__time {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 

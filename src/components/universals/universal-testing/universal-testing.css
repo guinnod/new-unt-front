@@ -1,0 +1,26 @@
+.testing__root {
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+
+.testing__anchor {
+    width: 100%;
+}
+
+
+
+
+.testing__button {
+    width: 4rem;
+    height: 4rem;
+    margin: 20rem 1rem;
+    cursor: pointer;
+}
+
+.testing__button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}

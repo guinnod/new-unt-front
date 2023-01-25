@@ -2,14 +2,15 @@ import { Card } from '../card';
 import { LazyImage } from '../../lazy-image';
 import './card-quiz.css';
 export const CardQuiz = ({ currentQuestion, userAnswer, current, selectOption, answers }) => {
+
     const isDivided = currentQuestion.task !== "" || currentQuestion.content !== "" || currentQuestion.taskContent !== "";
 
     const questionPart = <>
-        <LazyImage src={currentQuestion.taskContent} />
-        <div className="card-quiz__question">
+        {currentQuestion.taskContent ? <LazyImage className='card-quiz__image' src={currentQuestion.taskContent} /> : <></>}
+        {currentQuestion.task ? <div className="card-quiz__question">
             {currentQuestion.task}
-        </div>
-        <LazyImage src={currentQuestion.content} />
+        </div> : <></>}
+        {currentQuestion.content ? <LazyImage className='card-quiz__image' src={currentQuestion.content} /> : <></>}
     </>;
 
     const optionPart = <>
@@ -39,27 +40,33 @@ export const CardQuiz = ({ currentQuestion, userAnswer, current, selectOption, a
     </>;
     if (isDivided) {
         return (
-            <div className='card-quiz__root'>
-                <Card>
-                    <div className='card-quiz__anchor'>
-                        {questionPart}
-                    </div>
-                </Card>
-                <Card>
-                    <div className='card-quiz__anchor'>
-                        {optionPart}
-                    </div>
-                </Card>
+            <div className='card-quiz__root card-quiz__root--flex'>
+                <div className='card-quiz__part--question'>
+                    <Card>
+                        <div className='card-quiz__anchor'>
+                            {questionPart}
+                        </div>
+                    </Card>
+                </div>
+                <div className='card-quiz__part--option'>
+                    <Card>
+                        <div className='card-quiz__anchor '>
+                            {optionPart}
+                        </div>
+                    </Card>
+                </div>
             </div>
         );
     }
 
     return (
-        <Card>
-            <div className='card-quiz__anchor'>
-                {questionPart}
-                {optionPart}
-            </div>
-        </Card>
+        <div className='card-quiz__root'>
+            <Card>
+                <div className='card-quiz__anchor'>
+                    {questionPart}
+                    {optionPart}
+                </div>
+            </Card>
+        </div>
     );
 };
