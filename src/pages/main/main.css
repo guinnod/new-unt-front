@@ -41,6 +41,7 @@
     background-color: #F8F8F8;
     padding: 0.7rem;
     margin: 0 0.5rem;
+    white-space: nowrap;
 }
 
 #main__input {
@@ -70,7 +71,6 @@
 .main__optional {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .main__optional--header {
@@ -116,7 +116,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 5.7rem;
+    height: 4.5rem;
     white-space: normal;
 }
 
@@ -184,12 +184,41 @@
     font-size: 1.3rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1050px) {
+    .main__optional {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .main__text--big {
         font-size: 4rem;
     }
+}
+
+@media screen and (max-width: 550px) {
+    .main__text--big {
+        font-size: 3rem;
+    }
+
 
     .main__input {
-        width: 45rem;
+        width: 35rem;
+    }
+
+    .main__text--top h1,
+    .main__text--top h4 {
+        text-align: center;
+        white-space: normal;
+    }
+
+    .main__text--top h4 {
+        line-height: 2.5rem;
+    }
+
+    .main__ready__anchor h1 {
+        font-size: 1.8rem;
+        width: auto;
     }
 }

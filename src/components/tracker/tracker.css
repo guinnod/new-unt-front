@@ -1,6 +1,9 @@
-.tracker__anchor  > div { 
-    overflow: scroll;
-    min-width: 400px;
+.tracker__anchor { 
+    min-width: 40rem;
+}
+
+.tracker__anchor>svg {
+    margin: 1rem;
 }
 
 

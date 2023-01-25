@@ -1,35 +1,36 @@
 .displayCl {
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-bottom: 20px;
+    padding: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding-bottom: 2em;
     background: linear-gradient(90deg, #06beb6, #48b1bf 100%);
+    
 }
 
 .expressionCl {
-    padding: 5px;
-    margin-bottom: 10px;
-    height: 50px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    height: 5em;
 }
 
 .inputCl,
 .valueCl {
-    padding: 10px;
+    padding: 1em;
     text-align: right; 
     background-color: transparent;
     color: white;
     border: 0px;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.15em;
 }
 
 .inputCl {
-    font-size: 35px;
+    font-size: 3.5em;
 }
 
 .valueCl {
-    font-size: 15px;
+    font-size: 1.5em;
 }
 
 .inputCl::placeholder,

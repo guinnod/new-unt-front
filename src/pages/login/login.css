@@ -60,18 +60,18 @@
     border-radius: 0.5rem;
 }
 
+.login__card__button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
 .login__card__button img {
     width: 2rem;
     margin: 0 1rem 0 0;
 }
 
-@media only screen and (max-width: 700px) {
-    .login__anchor {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .login__anchor > div {
-        margin: 2rem 0;
+@media only screen and (max-width: 850px) {
+    .login__text {
+        display: none;
     }
 }

@@ -1,26 +1,37 @@
 .testing__root {
-
     display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 
 .testing__anchor {
     width: 100%;
+    padding: 1rem 5rem 0 5rem;
 }
-
-
-
 
 .testing__button {
     width: 4rem;
     height: 4rem;
-    margin: 20rem 1rem;
+    margin: 0 1rem;
     cursor: pointer;
+    position: fixed;
+    top: 45vh;
+}
+
+.testing__button--right {
+    right: 0;
+}
+
+.testing__button--disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
 }
 
 .testing__button:hover {
     transform: scale(1.1);
     transition: all 0.5s;
+}
+
+.testing__button--disabled:hover {
+    transform: none;
 }

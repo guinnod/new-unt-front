@@ -1,7 +1,7 @@
 .profile__anchor {
     display: flex;
     font-size: 1.4rem;
-    
+
 }
 
 .profile__sidebar {
@@ -21,17 +21,22 @@
     width: 100%;
 }
 
-.profile__content > div {
+.profile__content>div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.profile__content >div > div {
+.profile__content>div>div {
     margin: 2rem 0;
 }
 
-@media only screen and (max-width: 750px) {
+.tracker__root >div {
+    overflow: scroll;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 850px) {
     .profile__anchor {
         flex-direction: column;
         align-items: center;
@@ -43,7 +48,12 @@
         height: max-content;
     }
 
-    .profile__content > div, .profile__sidebar {
+    .profile__content>div,
+    .profile__sidebar {
         width: 80%;
+    }
+
+    .profile__sidebar {
+        margin: 0 0 2rem 0;
     }
 }

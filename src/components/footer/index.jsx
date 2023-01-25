@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <div className='footer__anchor'>
             <Header left={
-                <div>
+                <div className="footer__link">
                     <a href='https://www.nfactorial.school/'>
                         <div className='header__button'>
                             © 2022 nfactorial.school

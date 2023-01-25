@@ -55,27 +55,9 @@
     background-color: black;
 }
 
-@keyframes rotateMenu {
-    0% {
-        transform: rotateX(-90deg);
-    }
 
-    70% {
-        transform: rotateX(20deg);
-    }
 
-    100% {
-        transform: rotateX(0deg);
-    }
-}
-
-@media only screen and (min-width: 700px) {
-    .header-home__left {
-        margin: 0 0 0 3rem;
-    }
-}
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 850px) {
     .header-home__left {
         display: none !important;
     }

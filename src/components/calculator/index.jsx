@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Display from "./Display";
 import Buttons from "./Buttons";
-import "./styles/Calculator.css";
 import { evaluate, round } from "mathjs";
 
 function Calculator() {
@@ -133,7 +132,7 @@ function Calculator() {
   return (
     <>
 
-      <div className="mainCl" style={{zIndex: 5}}>
+      <div className="mainCl">
         <Display input={input} setInput={setInput} answer={answer} />
         <Buttons
           inputHandler={inputHandler}

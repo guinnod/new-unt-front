@@ -2,6 +2,9 @@
     overflow: scroll;
     display: flex;
     background-color: #2FD1BE;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
 
 .navigator__block {

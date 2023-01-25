@@ -44,20 +44,8 @@ textarea:focus {
     outline: 0.2em solid #EC008C;
 }
 
-@media only screen and (max-width: 850px) {
-    html {
-        font-size: 10px;
-    }
-}
-
 @media only screen and (max-width: 650px) {
     html {
-        font-size: 8px;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    html {
-        font-size: 6px;
+        font-size: 10px;
     }
 }

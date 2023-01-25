@@ -20,9 +20,9 @@ export const HeaderMain = () => {
         <Header right={
             <div>
                 <Link to='/home'>
-                <div className='header__button header__button--pink'>{language.value.headerMain.trialExam}</div>
+                    <div className='header__button header__button--pink'>{language.value.headerMain.trialExam}</div>
                 </Link>
-                <div className='header__button'>{language.value.headerMain.resources}</div>
+                <div className='header__button header-main__resources'>{language.value.headerMain.resources}</div>
                 <img className='header-main__flag' src={language.flag} alt="flag" onClick={changeLanguage} />
             </div>
         } />

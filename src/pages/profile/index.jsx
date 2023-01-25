@@ -30,7 +30,9 @@ export const Profile = () => {
                 <div className='profile__content'>
                     <div>
                         <Activity maxSolved={maxSolved} solved={solved} types={types} />
+                        <div className='tracker__root'>
                         <Tracker days={auth.days} text={language.progress}/>
+                        </div>
                     </div>
                 </div>
             </div>

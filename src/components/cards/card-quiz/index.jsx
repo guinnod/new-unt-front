@@ -12,7 +12,7 @@ export const CardQuiz = ({ currentQuestion, userAnswer, current, selectOption, a
         </div> : <></>}
         {currentQuestion.content ? <LazyImage className='card-quiz__image' src={currentQuestion.content} /> : <></>}
     </>;
-
+    
     const optionPart = <>
         <div className="card-quiz__question">
             {currentQuestion.question}

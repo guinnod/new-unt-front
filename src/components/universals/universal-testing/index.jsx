@@ -24,18 +24,19 @@ export const UniversalTesting = () => {
 
     const answers = quiz.answers;
 
-
     return (
-        <PageSkeleton header='working' timeLeft={quiz.timeLeft} countDown={countDown} footer>
-            <Navigator userAnswers={quiz.userAnswers} current={current} toQuestion={toQuestion}  />
-            <div className="testing__root">
-                <LazyImage src={previous} className='testing__button' onClick={() => { toQuestion(current - 1); }} />
-                <div className="testing__anchor">
-                    <CardQuiz currentQuestion={quiz.questions[current]} userAnswer={userAnswers[current]} current={current} selectOption={selectOption}  />
+        <div className="page-skeleton__root">
+            <PageSkeleton header='working' timeLeft={quiz.timeLeft} countDown={countDown} footer>
+                <div className="testing__root">
+                    <LazyImage src={previous} className={`testing__button ${current === 0 ? 'testing__button--disabled' : ''}`} onClick={() => { if (current !== 0) { toQuestion(current - 1); } }} />
+                    <div className="testing__anchor">
+                        <CardQuiz currentQuestion={quiz.questions[current]} userAnswer={userAnswers[current]} current={current} selectOption={selectOption} />
+                    </div>
+                    <LazyImage src={next} className={`testing__button testing__button--right ${current === quiz.questions.length - 1 ? 'testing__button--disabled' : ''}`} onClick={() => { if (current !== quiz.questions.length - 1) { toQuestion(current + 1); } }} />
                 </div>
-                <LazyImage src={next} className='testing__button' onClick={() => { toQuestion(current + 1); }} />
-            </div>
-        </PageSkeleton>
+                <Navigator userAnswers={quiz.userAnswers} current={current} toQuestion={toQuestion} />
+            </PageSkeleton>
+        </div>
     );
 
 };

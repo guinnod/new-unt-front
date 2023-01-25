@@ -4,3 +4,9 @@
     border-radius: 0.5rem;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 550px) {
+    .header-main__resources {
+        display: none;
+    }
+}
