@@ -26,10 +26,16 @@
 
 .card-theory__button__anchor {
     display: none;
+    backface-visibility: hidden;
 }
 
 .card-theory__button {
     width: 12rem !important;
+}
+
+.card-theory__button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 .card-theory__anchor .theory__button {

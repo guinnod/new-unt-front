@@ -13,15 +13,15 @@ export const ResultScore = ({ score, duration }) => {
                     value={(score / 35) * 100}
                     text={`${(score / 35).toFixed(2) * 100}%`}
                     styles={buildStyles({
-                        pathColor: ' #00E022 ',
+                        pathColor: ' #00E022 ', 
                         trailColor: 'red',
                         textColor: 'white',
                         textSize: 'inherit'
                     })}
                     className='result-score__circle'
                 />
-                <div>{`${language.testingDuration}: ${duration}`}</div>
-                <div>{`${language.score}: ${score}/45`}</div>
+                <div className='result-score__text'>{`${language.testingDuration}: ${duration}`}</div>
+                <div className='result-score__text'>{`${language.score}: ${score}/45`}</div>
             </div>
         </CardDark>
     );

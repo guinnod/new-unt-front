@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); */
 html {
     font-size: 12px;
     font-family:Arial, Helvetica, sans-serif;
@@ -54,6 +54,12 @@ textarea:focus {
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 3px;
+}
+
+.button--hovered:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 650px) {

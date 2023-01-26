@@ -1,25 +1,37 @@
 .result-navigation__anchor {
     display: grid;
-    
+    grid-template-columns: auto auto auto auto auto;
+    padding: 1rem;
+    width: max-content;
 }
 
 .result-navigation__block {
     background-color: #00E022;
-    border-radius: 1rem;
-    padding: 0.5rem;
+    border-radius: 0.5em;
+    padding: 0.2em;
     width: max-content;
-    height: 8rem;
+    height: 2.4em;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0.25em 0.5em;
 }
 
-.result-navigation__block--red {}
+.result-navigation__block--null {
+    background-color: red;
+}
 
-.result-navigation__block--yellow {}
+.result-navigation__block--half {
+    background-color: #FCDC00;
+}
 
 .result-navigation__number {
     background-color: white;
     color: black;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: 1rem 2rem;
-    width: max-content;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    height: 1.5em;
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

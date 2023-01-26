@@ -1,3 +1,17 @@
+
+
 .result-score__anchor {
     text-align: center;
+    margin: 1rem;
+}
+
+.result-score__circle {
+    width: 15rem;
+    margin: 2rem 1rem;
+}
+
+.result-score__text {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0.5rem 0;
 }

@@ -1,7 +1,7 @@
 import { CardTheory } from "../../cards/card-theory";
 import { PageSkeleton } from '../../page-skeleton';
 import { LazyImage } from '../../lazy-image';
-import { next, previous, repeat, shuffle } from "../../../media";
+import { repeat, shuffle } from "../../../media";
 import { useDispatch, useSelector } from "react-redux";
 import { theoryActions } from "../../../store/theory";
 import { useState } from 'react';
@@ -49,19 +49,19 @@ export const UniversalTheory = () => {
                         <div className="theory__button theory__button--red" onClick={() => { userSelect("DONT_KNOW"); }}>
                             {language.dontKnow}
                         </div>
-                        <LazyImage src={previous} className='theory__button__navigate' onClick={() => { change("PREVIOUS"); }} />
+                        
                         <div className="theory__fill">
 
                         </div>
                     </div>
 
-                    <CardTheory flip={flip} setFlip={setFlip} question={theory.question} answer={theory.answer} />
+                    <CardTheory flip={flip} setFlip={setFlip} question={theory.question} answer={theory.answer} userSelect={userSelect} />
                     <div onClick={() => { if (window.innerWidth > 850) { userSelect("KNOW"); } }} className="theory__part">
                         <div className="theory__count">{theory.knows}</div>
                         <div className="theory__button" onClick={() => { userSelect("KNOW"); }}>
                             {language.know}
                         </div>
-                        <LazyImage src={next} className='theory__button__navigate' onClick={() => { change("NEXT"); }} />
+                        
                         <div className="theory__fill">
 
                         </div>

@@ -6,12 +6,11 @@ export const ResultNavigation = ({ answers }) => {
 
     return (
         <CardDark>
-            <div>
+            <div className='result-topic__root'>
                 <div>{language.navigation}</div>
                 <div className='result-navigation__anchor'>
                     {answers.map((e, index) => {
-                        const className = 'result-navigation__block';
-                        return (<div className={className} key={index}>
+                        return (<div className={`button--hovered result-navigation__block result-navigation__block--${e.description}`} key={index}>
                             <div className='result-navigation__number'>
                                 {index + 1}
                             </div>
