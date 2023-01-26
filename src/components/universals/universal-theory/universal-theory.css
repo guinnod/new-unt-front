@@ -27,8 +27,12 @@
     color: #00E022;
     border: 3px solid #00E022;
     border-radius: 1rem;
-    padding: 1rem 1.5rem;
-    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    width: 4rem;
+    margin: 0 1rem;
 }
 
 .theory__count--red {
@@ -40,6 +44,7 @@
     font-weight: 800;
     font-size: 2.5rem;
     color: #00E022;
+    z-index: 1;
 }
 
 .theory__button--red {
@@ -67,4 +72,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.theory__button__navigate {
+    display: none;
+    width: 4rem;
+}
+
+@media  only screen and (max-width: 850px) {
+
+
+    .theory__button {
+        display: none;
+    }
+
+    .theory__part {
+        width: auto;
+        cursor: default;
+    }
+
+    .theory__part img {
+        cursor: pointer;
+    }
+
+    .theory__part:hover {
+        background-image: none;
+    }
+
+    .theory__button__navigate {
+        display: block;
+    }
+
+    .theory__count {
+        padding: 0.75rem 0;
+        font-size: 1.5rem;
+        width: 3rem;
+        border-width: 2px;
+        margin: 0 0.75rem;
+    }
 }

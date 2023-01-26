@@ -2,6 +2,7 @@
 
 html {
     font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -42,6 +43,17 @@ textarea::placeholder {
 input:focus,
 textarea:focus {
     outline: 0.2em solid #EC008C;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #0d0f12;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 3px;
 }
 
 @media only screen and (max-width: 650px) {

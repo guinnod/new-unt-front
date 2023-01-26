@@ -29,8 +29,6 @@
     border: none;
 }
 
-
-
 .activity__progress::-moz-progress-bar {
     background-color: #039603 !important;
 }
@@ -44,47 +42,29 @@
 }
 
 .activity__progress::-webkit-progress-bar {
+    background-color: #eeeeee;
+    border-radius: 1rem;
+}
+
+.activity__progress::-webkit-progress-value {
+    border-radius: 1rem;
     background-color: #039603 !important;
 }
 
-.activity__progress--context::-webkit-progress-bar {
+.activity__progress--context::-webkit-progress-value {
     background-color: orange !important;
 }
 
-.activity__progress--multiple::-webkit-progress-bar {
+.activity__progress--multiple::-webkit-progress-value {
     background-color: red !important;
 }
 
-.activity__progress::-o-progress-bar {
-    background-color: #039603 !important;
-}
+@media only screen and (max-width: 750px) {
+    .activity__anchor {
+        flex-direction: column;
+    }
 
-.activity__progress--context::-o-progress-bar {
-    background-color: orange !important;
-}
-
-.activity__progress--multiple::-o-progress-bar {
-    background-color: red !important;
-}
-
-.activity__progress::-ms-progress-bar {
-    background-color: #039603 !important;
-}
-
-.activity__progress--context::-ms-progress-bar {
-    background-color: orange !important;
-}
-
-.activity__progress--multiple::-ms-progress-bar {
-    background-color: red !important;
-}
-
-@media only screen and (max-width: 750px){
-   .activity__anchor {
-    flex-direction: column;
-   }
-
-   .activity__circle {
-    margin: 1rem;
-   }
+    .activity__circle {
+        margin: 1rem;
+    }
 }

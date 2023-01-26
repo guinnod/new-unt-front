@@ -3,7 +3,7 @@
     transform-style: preserve-3d;
     width: 40%;
     height: 40rem;
-    max-width: 30rem;
+    max-width: 40rem;
     margin: 3rem 0;
     font-size: 2rem;
     position: relative;
@@ -22,11 +22,14 @@
     width: 100%;
     white-space: normal;
     border-radius: 2rem;
-    padding: 1.5rem;
 }
 
-.card-theory__buttons {
-    display: flex;
+.card-theory__button__anchor {
+    display: none;
+}
+
+.card-theory__button {
+    width: 12rem !important;
 }
 
 .card-theory__anchor .theory__button {
@@ -47,4 +50,23 @@
 .card-theory__text {
     text-align: center;
     animation: textAnimate 1s;
+    margin: 0 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .card-theory__button__anchor {
+        display: flex;
+    }
+
+    .card-theory__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 70%;
+    }
+
+    .card-theory__root {
+        width: auto;
+        height: auto;
+    }
 }
