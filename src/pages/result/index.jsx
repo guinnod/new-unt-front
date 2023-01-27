@@ -13,7 +13,7 @@ export const Result = () => {
         <PageSkeleton className='result__root' header='working' footer>
             <TopText text={language.yourResult} />
             <div className='result__anchor'>
-                <ResultScore score={28} />
+                <ResultScore score={20} />
                 <ResultTopic topics={['python', 'sql']} />
                 <ResultNavigation answers={answers} />
             </div>

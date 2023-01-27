@@ -5,15 +5,14 @@ import { useSelector } from 'react-redux';
 import { CardDark } from '../../cards/card-dark';
 export const ResultScore = ({ score, duration }) => {
     const language = useSelector(state => state.language.value.result);
-
     return (
         <CardDark>
             <div className='result-score__anchor'>
                 <CircularProgressbar
                     value={(score / 35) * 100}
-                    text={`${(score / 35).toFixed(2) * 100}%`}
+                    text={`${Math.round((score / 35) * 100)}%`}
                     styles={buildStyles({
-                        pathColor: ' #00E022 ', 
+                        pathColor: ' #00E022 ',
                         trailColor: 'red',
                         textColor: 'white',
                         textSize: 'inherit'

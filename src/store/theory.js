@@ -24,12 +24,7 @@ const theorySlice = createSlice({
                 current--;
             }
             if (current >= questions.length) {
-                if (nextTime.length === 0) {
-                    state.partEnded = true;
-                } else {
-                    questions = [...questions, ...nextTime];
-                    nextTime = [];
-                }
+                state.partEnded = true;
             }
             if (current < questions.length) {
                 state.question = questions[current].question;
@@ -45,8 +40,12 @@ const theorySlice = createSlice({
                 state.dontKnows++;
             }
         },
-        init(state) {
-            questions = [...base];
+        init(state, action) {
+            if (nextTime.length !== 0 && action.payload !== "ALL") {
+                questions = [...nextTime];
+            } else {
+                questions = [...base];
+            }
             nextTime = [];
             current = 0;
             state.partEnded = false;
