@@ -11,10 +11,10 @@
 
 .result-topic__block {
     background-color: #E2E5E9;
-    border-radius: 0.75rem;
-    padding: 0.75rem 1.5rem;
+    border-radius: 0.45em;
+    padding: 0.4em 0.75em;
     color: black;
     width: max-content;
     font-size: 2rem;
-    margin: 0.5rem;
+    margin: 0.25em;
 } 
