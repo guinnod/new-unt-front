@@ -227,7 +227,7 @@
         border-radius: 0.75rem;
         height: 5rem;
         width: 20rem !important;
-        margin: 0 0 2rem 4rem;
+        margin: 0 0 2rem 2rem;
         font-size: 1.5rem;
     }
 
@@ -239,5 +239,16 @@
     .theory-result__symbol {
         width: 3rem;
         margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .theory-result__anchor>div:last-child {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .theory-result__buttons>div {
+        margin: 2rem 0;
     }
 }
