@@ -4,6 +4,8 @@ import { Navigator } from "../../navigator";
 import { PageSkeleton } from "../../page-skeleton";
 import { practiceActions } from "../../../store/practice";
 import './universal-practice.css';
+import { LazyImage } from "../../lazy-image";
+import { next, previous } from "../../../media";
 
 
 
@@ -15,13 +17,17 @@ export const UniversalPractice = ({ link }) => {
     }
 
     return (
-        <PageSkeleton header='working' footer className='practice__anchor'>
+        <PageSkeleton header='working' footer className='practice__anchor' timeLeft={40}>
             <Navigator userAnswers={practice.questions} toQuestion={toQuestion} current={practice.current} />
-            <div className="practice__content">
-                <Card>
-                    {practice.questions[practice.current].question}
-                </Card>
-                <iframe src={link} style={{ width: '800px', height: '600px' }}></iframe>
+            <div className="practice__content__root">
+                <LazyImage src={previous} className='practice__content__button' />
+                <div className="practice__content">
+                    <Card>
+                        {practice.questions[practice.current].question}
+                    </Card>
+                    <iframe src={link} className='practice__iframe'></iframe>
+                </div>
+                <LazyImage src={next} className='practice__content__button' />
             </div>
         </PageSkeleton>
     );
