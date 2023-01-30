@@ -52,9 +52,6 @@ export const getPages = (type, language) => {
             subtypes: [
                 {
                     path: "mix", text: language.theory.mix, subText: language.theory.mix, src: theory
-                },
-                {
-                    path: "mistakes", text: language.theory.mistakes, subText: language.theory.mistakes, src: theory
                 }
             ]
         };
@@ -85,8 +82,7 @@ export const getRoutes = (type, language) => {
     if (type === 'theory') {
         return [
             { path: "", Component: <UniversalPages content={getPages('theory', language)} /> },
-            { path: "mix", Component: <UniversalTheory /> },
-            { path: "mistakes", Component: <UniversalTheory /> }
+            { path: "mix", Component: <UniversalTheory /> }
         ];
     }
     return null;

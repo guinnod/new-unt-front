@@ -25,7 +25,7 @@ export const UniversalPractice = ({ link }) => {
                     <Card>
                         {practice.questions[practice.current].question}
                     </Card>
-                    <iframe src={link} className='practice__iframe'></iframe>
+                    <iframe src={link} className='practice__iframe' title="practice"></iframe>
                 </div>
                 <LazyImage src={next} className='practice__content__button' />
             </div>
