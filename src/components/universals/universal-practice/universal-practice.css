@@ -1,0 +1,11 @@
+.practice__anchor .navigator__anchor {
+    justify-content: center;
+}
+
+.practice__content > div:first-child {
+    width: 30rem;
+}
+
+.practice__content {
+    display: flex;
+}

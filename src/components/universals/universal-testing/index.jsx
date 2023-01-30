@@ -30,11 +30,12 @@ export const UniversalTesting = () => {
                 <div className="testing__root">
                     <LazyImage src={previous} className={`testing__button ${current === 0 ? 'testing__button--disabled' : ''}`} onClick={() => { if (current !== 0) { toQuestion(current - 1); } }} />
                     <div className="testing__anchor">
-                        <CardQuiz currentQuestion={quiz.questions[current]} userAnswer={userAnswers[current]} current={current} selectOption={selectOption} answers={answers} />
+                        <CardQuiz currentQuestion={quiz.questions[current]} userAnswer={userAnswers[current]} current={current} selectOption={selectOption} />
                     </div>
-                    <LazyImage src={next} className={`testing__button testing__button--right ${current === quiz.questions.length - 1 ? 'testing__button--disabled' : ''}`} onClick={() => { if (current !== quiz.questions.length - 1) { toQuestion(current + 1); } }} />
+                    <LazyImage src={next} className={`testing__button testing__button--right ${current === quiz.questions.length - 1 ? 'testing__button--disabled' : ''}`} 
+                    onClick={() => { if (current !== quiz.questions.length - 1) { toQuestion(current + 1); } }} />
                 </div>
-                <Navigator userAnswers={quiz.userAnswers} current={current} toQuestion={toQuestion} answers={answers}/>
+                <Navigator userAnswers={quiz.userAnswers} current={current} toQuestion={toQuestion} />
             </PageSkeleton>
         </div>
     );

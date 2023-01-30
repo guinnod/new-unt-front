@@ -75,11 +75,11 @@ export const getRoutes = (type, language) => {
     if (type === 'practice') {
         return [
             { path: "", Component: <UniversalPages content={getPages('practice', language)} /> },
-            { path: "python", Component: <UniversalPractice /> },
-            { path: "html", Component: <UniversalPractice /> },
-            { path: "excel", Component: <UniversalPractice /> },
-            { path: "converting", Component: <UniversalPractice /> },
-            { path: "sql", Component: <UniversalPractice /> }
+            { path: "python", Component: <UniversalPractice link='https://www.programiz.com/python-programming/online-compiler/' /> },
+            { path: "html", Component: <UniversalPractice link='https://www.jdoodle.com/html-css-javascript-online-editor/' /> },
+            { path: "excel", Component: <UniversalPractice link='https://products.aspose.app/cells/editor/edit?FolderName=2ee329de-4db4-44b3-80f1-5479746df38c&FileName=travel-budget.xlsx' /> },
+            { path: "converting", Component: <UniversalPractice link='https://codebeautify.org/all-number-converter' /> },
+            { path: "sql", Component: <UniversalPractice link='https://www.programiz.com/sql/online-compiler/' /> }
         ];
     }
     if (type === 'theory') {

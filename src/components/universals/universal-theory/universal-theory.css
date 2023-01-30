@@ -80,7 +80,7 @@
 }
 
 .theory-result__anchor .top-text__anchor {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
 }
 
 .theory-result__anchor .top-text__anchor hr:first-child {
@@ -100,24 +100,29 @@
 }
 
 .theory-result__content {
-    padding: 2rem;
+    padding: 2.5rem;
 }
 
 .theory-result__content>div:first-child {
-    padding: 1rem 5rem;
+    padding: 2.5rem 7rem;
+}
+
+.theory-result__content .card-dark__anchor {
+    padding: 2rem 3rem;
 }
 
 .theory-result__circle {
-    width: 15rem;
-    margin: 1rem 0 3rem 0;
+    width: 20rem;
+    margin: 2rem 0 4rem 0;
 }
 
 .theory-result__circle__text {
     display: flex;
     align-items: center;
-    font-size: 1.8rem;
+    justify-content: space-between;
+    font-size: 2.8rem;
     color: #00E022;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 .theory-result__circle__text:last-child {
@@ -125,10 +130,10 @@
 }
 
 .theory-result__circle__text--score {
-    padding: 0.5rem;
-    border: 1px solid;
+    padding: 1rem;
+    border: 3px solid;
     border-color: inherit;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     margin: 0 1rem;
 }
 
@@ -136,20 +141,21 @@
     display: flex;
     border-radius: 0.75rem;
     align-items: center;
-    height: 5rem;
-    width: 20rem !important;
-    margin: 0 0 2rem 4rem;
+    height: 7rem;
+    width: 30rem !important;
+    margin: 0 0 3rem 4rem;
+    font-size: 2.5rem;
 }
 
 .theory-result__symbol--written {
-    font-size: 4rem;
+    font-size: 7rem;
     transform: rotate(180deg);
     margin: 0 1rem;
 }
 
 .theory-result__symbol {
-    width: 3rem;
-    margin: 0 1rem;
+    width: 5rem;
+    margin: 0 2rem;
 }
 
 @media only screen and (max-width: 850px) {
@@ -180,5 +186,58 @@
         width: 3rem;
         border-width: 2px;
         margin: 0 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .theory-result__anchor .top-text__anchor {
+        font-size: 1.7rem;
+    }
+
+    .theory-result__content {
+        padding: 2rem;
+    }
+
+    .theory-result__content>div:first-child {
+        padding: 1rem 5rem;
+    }
+
+    .theory-result__content .card-dark__anchor {
+        padding: 1rem 2rem;
+    }
+
+    .theory-result__circle {
+        width: 15rem;
+        margin: 1rem 0 3rem 0;
+    }
+
+    .theory-result__circle__text {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+    }
+
+    .theory-result__circle__text--score {
+        padding: 0.5rem;
+        border: 1px solid;
+        border-radius: 0.5rem;
+        margin: 0 1rem;
+    }
+
+    .theory-result__buttons>div {
+        border-radius: 0.75rem;
+        height: 5rem;
+        width: 20rem !important;
+        margin: 0 0 2rem 4rem;
+        font-size: 1.5rem;
+    }
+
+    .theory-result__symbol--written {
+        font-size: 4rem;
+        margin: 0 1rem;
+    }
+
+    .theory-result__symbol {
+        width: 3rem;
+        margin: 0 1rem;
     }
 }

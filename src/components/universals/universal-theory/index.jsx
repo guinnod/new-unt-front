@@ -40,9 +40,9 @@ export const UniversalTheory = () => {
     const score = theory.knows;
     return (
         <PageSkeleton footer={true} header='home'>
-            {theory.partEnded ?
+            {!theory.partEnded ?
                 <div className="theory-result__anchor">
-                    <TopText text='Congratulations !' />
+                    <TopText text='Congratulations!' />
                     <div className="theory-result__content">
                         <CardDark>
                             <div className='theory-result__circle'>
