@@ -291,4 +291,9 @@
         font-size: 2.5rem;
         width: auto;
     }
+
+    .main__input,
+    .main__input * {
+        max-height: 30px;
+    }
 }

@@ -107,6 +107,7 @@
 
     .header-working__drop__part img {
         width: 4rem;
+        max-height: 30px;
     }
 
     .header-working__drop>.header__button {
