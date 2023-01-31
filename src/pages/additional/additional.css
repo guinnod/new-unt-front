@@ -9,6 +9,7 @@
     background-color: #22262D;
     border-radius: 2rem;
     padding: 1rem 2rem;
+    margin: 0 1rem;
 }
 
 .additional__anchor>form {
@@ -74,5 +75,22 @@
 @media only screen and (max-width: 650px) {
     .additional__input, .additional__media--hidden {
         width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .additional__root {
+        padding: 3rem 0;
+        font-size: 2.3rem;
+    }
+    .additional__input {
+        font-size: 2rem;
+        margin: 1.5rem;
+    }
+    .additional__media--hidden, .additional__input {
+        width: 36rem;
+    }
+    .additional__submit {
+        font-size: 2.3rem;
     }
 }

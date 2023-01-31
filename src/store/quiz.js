@@ -28,7 +28,9 @@ const quizSlice = createSlice({
     initialState: initialState,
     reducers: {
         toQuestion(state, action) {
-            state.current = action.payload;
+            if (action.payload >= 0 && action.payload < state.questions.length) {
+                state.current = action.payload;
+            }
         },
         selectOption(state, action) {
             const index = action.payload.index;

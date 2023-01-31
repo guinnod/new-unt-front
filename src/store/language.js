@@ -5,7 +5,7 @@ import { Flag_of_Kazakhstan, Flag_of_Russia } from "../media";
 const currentLanguage = localStorage.getItem('language') === 'ru' ? russian : kazakh;
 const currentFlag = localStorage.getItem('language') === 'ru' ? Flag_of_Kazakhstan : Flag_of_Russia;
 const initialState = {
-    value: currentLanguage, 
+    value: currentLanguage,
     flag: currentFlag
 }
 const languageSlice = createSlice({

@@ -7,10 +7,8 @@ import { Home } from './pages/home';
 import { Additional } from './pages/additional';
 import { Profile } from './pages/profile';
 import Protected from './protected';
-import { getRoutes } from './data/consts';
-import { universalRoutes } from './components/universals/universal-routes';
+import { universalRoutes } from './universalRoutes';
 import './App.css';
-import { Result } from './pages/result';
 
 function App() {
   const language = useSelector((state) => {
@@ -29,16 +27,15 @@ function App() {
           <Route path="profile" element={<Profile />} />
           <Route path='additional' element={<Additional />} />
           <Route path='testing'>
-            {universalRoutes(getRoutes('testing', language))}
+            {universalRoutes('testing', language)}
           </Route>
           <Route path='practice'>
-            {universalRoutes(getRoutes('practice', language))}
+            {universalRoutes('practice', language)}
           </Route>
           <Route path='theory'>
-            {universalRoutes(getRoutes('theory', language))}
+            {universalRoutes('theory', language)}
           </Route>
         </Route>
-        <Route path='/*' element={<Result />} />
         <Route path='/*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>

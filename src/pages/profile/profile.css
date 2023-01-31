@@ -31,7 +31,7 @@
     margin: 2rem 0;
 }
 
-.tracker__root >div {
+.tracker__root>div {
     overflow: scroll;
     border-radius: 0.5rem;
 }
@@ -55,5 +55,23 @@
 
     .profile__sidebar {
         margin: 0 0 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .profile__anchor {
+        font-size: 2.5rem;
+    }
+
+    .profile__sidebar {
+        padding: 4rem 2rem;
+    }
+
+    .profile__photo {
+        width: 12rem;
+    }
+    .profile__content>div,
+    .profile__sidebar {
+        width: 90%;
     }
 }

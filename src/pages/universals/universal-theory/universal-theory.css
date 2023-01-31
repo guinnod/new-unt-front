@@ -1,0 +1,121 @@
+.theory__anchor {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theory__part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 30%;
+    height: 43rem;
+    padding: 3rem 0;
+}
+
+.theory__part:hover {
+    background-image: linear-gradient(to left, rgba(0, 224, 34, 0.7), #0d0f12);
+}
+
+.theory__part--red:hover {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.7), #0d0f12);
+}
+
+.theory__count {
+    color: #00E022;
+    border: 3px solid #00E022;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    width: 4rem;
+    margin: 0 1rem;
+}
+
+.theory__count--red {
+    color: #FF0000;
+    border-color: #FF0000;
+}
+
+.theory__button {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #00E022;
+    z-index: 1;
+}
+
+.theory__button--red {
+    color: #FF0000;
+}
+
+.theory__navigate {
+    width: 10rem;
+    cursor: pointer;
+}
+
+.theory__regime {
+    width: 6rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.card__theory__anchor {
+    align-self: center;
+    justify-self: center;
+}
+
+.theory__fill {
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theory__button__navigate {
+    display: none;
+    width: 4rem;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+    .theory__button {
+        display: none;
+    }
+
+    .theory__part {
+        width: auto;
+        cursor: default;
+    }
+
+    .theory__part img {
+        cursor: pointer;
+    }
+
+    .theory__part:hover {
+        background-image: none;
+    }
+
+    .theory__button__navigate {
+        display: block;
+    }
+
+    .theory__count {
+        padding: 0.75rem 0;
+        font-size: 1.5rem;
+        width: 3rem;
+        border-width: 2px;
+        margin: 0 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .theory__count {
+        padding: 1rem 0;
+        font-size: 2.3rem;
+        width: 4rem;
+    }
+}

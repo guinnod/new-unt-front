@@ -26,11 +26,11 @@ export const Login = () => {
                         <input type="text" id="username" placeholder={language.username} />
                         <input type="text" id="nameOfSchool" placeholder={language.nameOfSchool} />
                         <Link to='/home'>
-                            <div className='login__card__button'><LazyImage src={google} alt='google' /> <div>{language.signUp}</div></div>
+                            <div className='button--hovered login__card__button'><LazyImage src={google} alt='google' /> <div>{language.signUp}</div></div>
                         </Link>
                         <div className='login__card__text'>{language.alreadyHave}</div>
                         <Link to='/home'>
-                            <div className='login__card__button'><LazyImage src={google} alt='google' /> <div>{language.signIn}</div></div>
+                            <div className='button--hovered login__card__button'><LazyImage src={google} alt='google' /> <div>{language.signIn}</div></div>
                         </Link>
                     </div>
                 </CardDark>

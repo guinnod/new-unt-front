@@ -4,15 +4,15 @@ import { ResultNavigation } from '../../components/results/result-navigation';
 import { ResultScore } from '../../components/results/result-score';
 import { ResultTopic } from '../../components/results/result-topic';
 import { TopText } from '../../components/top-text';
-import './result.css';
+import './quiz-result.css';
 
-export const Result = () => {
+export const QuizResult = () => {
     const language = useSelector(state => state.language.value.result);
     const answers = useSelector(state => state.quiz.answers);
     return (
-        <PageSkeleton className='result__root' header='working' footer>
+        <PageSkeleton className='quiz-result__root' header='working' timeLeft={0} footer>
             <TopText text={language.yourResult} />
-            <div className='result__anchor'>
+            <div className='quiz-result__anchor'>
                 <ResultScore score={20} />
                 <ResultTopic topics={['python', 'sql']} />
                 <ResultNavigation answers={answers} />

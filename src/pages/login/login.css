@@ -60,10 +60,6 @@
     border-radius: 0.5rem;
 }
 
-.login__card__button:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
 
 .login__card__button img {
     width: 2rem;
@@ -73,5 +69,28 @@
 @media only screen and (max-width: 850px) {
     .login__text {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .login__card {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    .login__card>* {
+        margin: 1.5rem 0;
+    }
+    .login__anchor input {
+        font-size: 2.5rem;
+    }
+
+    .login__card__button {
+        padding: 1rem 1.4rem;
+        border-radius: 0.5rem;
+    }
+
+    .login__card__button img {
+        width: 3rem;
+        margin: 0 1.5rem 0 0;
     }
 }

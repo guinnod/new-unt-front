@@ -1,31 +1,31 @@
-.result__root .top-text__anchor hr:first-child {
+.quiz-result__root .top-text__anchor hr:first-child {
     width: 10%;
 }
 
-.result__root .top-text__anchor hr:last-child {
+.quiz-result__root .top-text__anchor hr:last-child {
     width: 90%;
 }
 
-.result__root .top-text__anchor {
+.quiz-result__root .top-text__anchor {
     font-size: 2rem;
     margin: 1rem 0;
 }
 
-.result__anchor {
+.quiz-result__anchor {
     display: flex;
     padding: 2rem 3rem;
 
     justify-content: space-around;
 }
 
-.result__anchor>div {
-    width: 30rem;
+.quiz-result__anchor>div {
+    width: 30rem; 
     display: flex;
     justify-content: center;
 }
 
 @media only screen and (max-width: 1250px) {
-    .result__anchor>div {
+    .quiz-result__anchor>div {
         width: 25rem;
     }
 
@@ -36,8 +36,8 @@
 
 @media only screen and (max-width: 1050px) {
 
-    .result__anchor>div:first-child,
-    .result__anchor>div:nth-child(2) {
+    .quiz-result__anchor>div:first-child,
+    .quiz-result__anchor>div:nth-child(2) {
         width: 20rem;
     }
 
@@ -59,7 +59,7 @@
 }
 
 @media only screen and (max-width: 950px) {
-    .result__anchor>div {
+    .quiz-result__anchor>div {
         width: 22rem;
     }
 
@@ -69,15 +69,41 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .result__anchor {
+    .quiz-result__anchor {
         flex-direction: column;
         align-items: center;
     }
-    .result__anchor>div {
+    .quiz-result__anchor>div {
         width: 30rem !important;
         margin: 1rem 0;
     }
     .result-navigation__anchor {
         grid-template-columns: auto auto auto auto auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .quiz-result__anchor {
+        font-size: 3rem;
+    }
+    .result-topic__root {
+        font-size: 2.5rem;
+    }
+    .result-score__text {
+        font-size: 2.5rem;
+    }
+    .result-navigation__block {
+        font-size: 1.6rem;
+    }
+
+    .result-topic__block {
+        font-size: 2.2rem;
+    }
+
+    .quiz-result__anchor > div {
+        width: 42rem !important;
+    }
+    .quiz-result__root .top-text__anchor {
+        font-size: 2.5rem;
     }
 }

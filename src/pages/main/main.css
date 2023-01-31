@@ -198,10 +198,14 @@
 }
 
 @media screen and (max-width: 550px) {
+
+    .main__news {
+        font-size: 2rem;
+    }
+
     .main__text--big {
         font-size: 3rem;
     }
-
 
     .main__input {
         width: 35rem;
@@ -217,8 +221,74 @@
         line-height: 2.5rem;
     }
 
+    .main__optional--header {
+        font-size: 2.5rem;
+        width: 38rem;
+    }
+
+    .main__learn__block__text {
+        font-size: 2rem;
+    }
+
+    .main__learn__block__text>div:last-child {
+        font-size: 1.5rem;
+    }
+
+    .main__learn__block__anchor {
+        width: auto;
+    }
+
+    .main__learn__block__anchor a {
+        font-size: 1.7rem;
+    }
+
+    .main__optional__news>a {
+        font-size: 2.5rem;
+    }
+
+    .main__optional__news__content {
+        font-size: 1.8rem;
+    }
+
     .main__ready__anchor h1 {
         font-size: 1.8rem;
+        width: auto;
+    }
+
+    .main__ready__button {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main__text--big {
+        font-size: 3.5rem;
+    }
+
+
+    .main__input {
+        width: 40rem;
+    }
+
+    .main__input input {
+        font-size: 2rem;
+    }
+
+    .main__text--top {
+        padding: 5rem 6rem;
+    }
+
+    .main__text--top h4 {
+        line-height: 3.2rem;
+        font-size: 2rem;
+    }
+
+    .main__text--top h1 {
+        font-size: 2.2rem;
+    }
+
+    .main__ready__anchor h1 {
+        font-size: 2.5rem;
         width: auto;
     }
 }
