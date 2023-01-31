@@ -1,3 +1,4 @@
+import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Main } from './pages/main';
@@ -8,7 +9,7 @@ import { Additional } from './pages/additional';
 import { Profile } from './pages/profile';
 import Protected from './protected';
 import { universalRoutes } from './universalRoutes';
-import './App.css';
+
 
 function App() {
   const language = useSelector((state) => {
