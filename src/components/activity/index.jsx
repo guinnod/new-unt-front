@@ -5,7 +5,6 @@ import 'react-circular-progressbar/dist/styles.css';
 import './activity.css';
 export const Activity = ({ maxSolved, solved, types }) => {
     const language = useSelector(state => state.language.value.profile);
-
     return (
         <CardDark>
             <div className='activity__anchor'>
@@ -26,14 +25,14 @@ export const Activity = ({ maxSolved, solved, types }) => {
                     </div>
                 </div>
                 <div className='activity__progress__anchor'>
-                    {types ? types.map((e, index) => {
+                    {types.map((e, index) => {
                         return (
                             <div key={index}>
                                 <div>{e.text} <span>{e.value}/{e.maxValue}</span> </div>
                                 <progress className={`activity__progress ${e.className}`} value={e.value} max={e.maxValue}></progress>
                             </div>
                         );
-                    }) : <></>}
+                    })}
                 </div>
             </div>
         </CardDark>

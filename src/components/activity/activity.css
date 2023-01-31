@@ -68,3 +68,20 @@
         margin: 1rem;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .activity__anchor {
+        padding: 1rem;
+        white-space: normal;
+    }
+    
+    .activity__circle {
+        width: 18rem;
+        height: 18rem;
+        margin: 2rem 1rem;
+    }
+    
+    .activity__progress {
+        width: 38rem;
+    }
+}

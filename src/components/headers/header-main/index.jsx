@@ -4,7 +4,6 @@ import { languageActions } from '../../../store/language';
 import { Header } from '../header';
 import './header-main.css';
 
-
 export const HeaderMain = () => {
     const language = useSelector((state) => {
         return state.language;
@@ -14,7 +13,6 @@ export const HeaderMain = () => {
     const changeLanguage = () => {
         dispatch(languageActions.change());
     };
-
 
     return (
         <Header right={

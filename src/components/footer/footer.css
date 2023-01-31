@@ -21,13 +21,22 @@
     cursor: pointer;
 }
 
-.footer__logo:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
-
 @media only screen and (max-width: 550px) {
     .footer__link {
         display: none !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .footer__anchor .logo__img {
+        width: 4.5rem;
+    }
+    
+    .footer__anchor .logo__text {
+        font-size: 1.7rem;
+    }
+
+    .footer__logo {
+        width: 4rem;
     }
 }

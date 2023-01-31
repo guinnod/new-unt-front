@@ -14,11 +14,11 @@ export const CardTheory = ({ question, answer, flip, setFlip, userSelect }) => {
                     <div onClick={(e) => {
                         e.stopPropagation();
                         userSelect("DONT_KNOW");
-                    }} className='card-theory__button theory__count theory__count--red'>{language.dontKnow}</div>
+                    }} className='button--hovered card-theory__button theory__count theory__count--red'>{language.dontKnow}</div>
                     <div onClick={(e) => {
                         e.stopPropagation();
                         userSelect("KNOW");
-                    }} className='card-theory__button theory__count'>{language.know}</div>
+                    }} className='button--hovered card-theory__button theory__count'>{language.know}</div>
                 </div>
             </div>
             <div className='card-theory__anchor card-theory__anchor--flipped card-theory__anchor--back'>

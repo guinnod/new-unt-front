@@ -7,10 +7,6 @@
     cursor: pointer;
 }
 
-.header-working__image:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
 
 .header-working__image--active {
     border-top-left-radius: 50%;
@@ -25,7 +21,7 @@
 
 .header-working__calculator {
     position: absolute;
-    right: 0;
+    right: 1rem;
     top: 10rem;
     cursor: grab;
     max-width: 400px;
@@ -61,7 +57,6 @@
     display: flex;
     justify-content: center;
     border-radius: 0.3rem;
-
 }
 
 .header-working__drop__part img {
@@ -86,13 +81,6 @@
     cursor: pointer;
 }
 
-.header-working__additional:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
-
-
-
 @media only screen and (max-width: 565px) {
     .header__to-hide {
         display: none !important;
@@ -104,3 +92,30 @@
     }
 }
 
+@media only screen and (max-width: 450px) {
+    .header-working__additional {
+        font-size: 2rem;
+    }
+
+    .header-working__drop {
+        top: 8rem;
+    }
+
+    .header-working__drop>* {
+        margin: 1rem 0 !important;
+    }
+
+    .header-working__drop__part img {
+        width: 4rem;
+    }
+
+    .header-working__drop>.header__button {
+        margin: 1rem 2rem !important;
+        font-size: 2rem;
+    }
+
+    .header-working__calculator {
+        right: 1.5rem;
+        font-size: 0.8rem;
+    }
+}

@@ -12,7 +12,7 @@ export const HeaderWorking = ({ timeLeft, countDown }) => {
     const language = useSelector((state) => {
         return state.language.value;
     });
-    const time = {
+    let time = {
         hours: Math.floor(timeLeft / (1000 * 60 * 60)),
         minutes: Math.floor((timeLeft / 1000 / 60) % 60),
         seconds: Math.floor((timeLeft / 1000) % 60),
@@ -25,6 +25,7 @@ export const HeaderWorking = ({ timeLeft, countDown }) => {
     //         countDown();
     //     }, 1000);
     // }, [timeLeft]);
+
     const changePosition = (event) => {
         const element = document.getElementById('calculator');
         let shiftX = event.clientX - element.getBoundingClientRect().left;
@@ -71,26 +72,26 @@ export const HeaderWorking = ({ timeLeft, countDown }) => {
                 </div>
                 <div className='header__button header__button--pink header__to-hide'>{language.quizHeader.finish}</div>
                 <div>
-                    <LazyImage className='header-working__image header__to-hide' src={calculator} alt="calculator" onClick={() => { setShowCalculator(!showCalculator) }} />
+                    <LazyImage className='button--hovered header-working__image header__to-hide' src={calculator} alt="calculator" onClick={() => { setShowCalculator(!showCalculator) }} />
                     <div id='calculator' className='header-working__calculator' onMouseDownCapture={(event) => { changePosition(event) }}>
                         {showCalculator ?
                             <Calculator />
                             : <></>}
                     </div>
                 </div>
-                <LazyImage className={musicActive ? 'header-working__image header-working__image--active header__to-hide' : 'header-working__image header__to-hide'} src={headphones} alt="headphones" onClick={playAudio} />
+                <LazyImage className={musicActive ? 'button--hovered header-working__image header-working__image--active header__to-hide' : 'button--hovered header-working__image header__to-hide'} src={headphones} alt="headphones" onClick={playAudio} />
                 <audio id='lofiMusic'>
                     <source src='https://raw.githubusercontent.com/guinnod/lofimus/main/videoplaybac1k%20(mp3cut%20(mp3cut.net).mp3'></source>
                 </audio>
-                <div className='header-working__additional' onClick={() => { setWorkingDrop(!workingDrop); }}>Additional</div>
+                <div className='button--hovered header-working__additional' onClick={() => { setWorkingDrop(!workingDrop); }}>Additional</div>
                 {
                     workingDrop ? <div className='header-working__drop'>
                         <div className='header-working__drop__part'>
-                            <LazyImage className='header-working__image' src={calculator} alt="calculator" onClick={() => { setShowCalculator(!showCalculator); setWorkingDrop(false); }} />
+                            <LazyImage className=' button--hovered header-working__image' src={calculator} alt="calculator" onClick={() => { setShowCalculator(!showCalculator); setWorkingDrop(false); }} />
                         </div>
                         <hr />
                         <div className='header-working__drop__part'>
-                            <LazyImage className={musicActive ? 'header-working__image header-working__image--active' : 'header-working__image'} src={headphones} alt="headphones" onClick={playAudio} />
+                            <LazyImage className={musicActive ? 'button--hovered header-working__image header-working__image--active' : 'button--hovered header-working__image'} src={headphones} alt="headphones" onClick={playAudio} />
                         </div>
                         <hr />
                         <div className='header__button'>{language.quizHeader.finish}</div>

@@ -1,4 +1,4 @@
-.tracker__anchor { 
+.tracker__anchor {
     min-width: 40rem;
 }
 
@@ -9,4 +9,24 @@
 
 .tracker__text {
     margin: 0 0 1rem 1rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .tracker__text {
+        position: relative;
+        left: 0;
+    }
+
+    .tracker__anchor {
+        width: 40rem;
+        overflow: scroll;
+    }
+
+    .tracker__anchor>* {
+        min-width: 70rem;
+    }
+
+    .tracker__root .card-dark__anchor {
+        overflow: hidden !important;
+    }
 }

@@ -10,12 +10,13 @@
     display: flex;
     align-items: center;
 }
-.header__part > div {
+
+.header__part>div {
     display: flex;
     align-items: center;
 }
 
-.header__part > div > * {
+.header__part>div>* {
     margin: 0 1rem;
 }
 
@@ -49,5 +50,11 @@
 
     100% {
         transform: rotateX(0deg);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .header__button {
+        font-size: 1.5rem;
     }
 }

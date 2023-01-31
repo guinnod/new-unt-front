@@ -62,3 +62,33 @@
         display: none !important;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .header-home__portrait {
+        width: 4rem;
+    }
+
+    .header-home__name {
+        font-size: 2.2rem;
+    }
+
+    .header-home__profile {
+        border-radius: 1rem;
+        padding: 1rem 0;
+        margin: 1rem 0;
+    }
+
+    .profile-drop {
+        top: 7rem;
+        font-size: 2rem;
+    }
+
+    .profile-drop ul {
+        padding-left: 4rem;
+    }
+
+    .profile-drop hr {
+        height: 0.3rem;
+    }
+
+}

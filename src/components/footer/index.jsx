@@ -14,9 +14,9 @@ export const Footer = () => {
                 </div>
             } right={
                 <div>
-                    <img className='footer__logo' src={linkedin} alt="linkedin" />
-                    <img className='footer__logo' src={telegram} alt="telegram" />
-                    <img className='footer__logo' src={instagram} alt="instagram" />
+                    <img className='footer__logo button--hovered' src={linkedin} alt="linkedin" />
+                    <img className='footer__logo button--hovered' src={telegram} alt="telegram" />
+                    <img className='footer__logo button--hovered' src={instagram} alt="instagram" />
                 </div>
             } />
         </div>

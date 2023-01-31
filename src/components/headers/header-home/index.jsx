@@ -11,8 +11,8 @@ export const HeaderHome = () => {
         <div>
             <Header left={
                 <div className='header-home__left'>
-                    <Link to='./testing'><div className='header__button'>{language.trialExam}</div></Link>
-                    <Link to='./practice'><div className='header__button'>{language.practice}</div></Link>
+                    <Link to='/home/testing'><div className='header__button'>{language.trialExam}</div></Link>
+                    <Link to='/home/practice'><div className='header__button'>{language.practice}</div></Link>
                     <a href='http://www.testcenter.kz/postupayushchim-v-vuz/ent/edinoe-natsionalnoe-testirovanie-ent/' target='_blank' rel="noreferrer"><div className='header__button'>{language.guide}</div></a>
                 </div>
             }
@@ -25,16 +25,19 @@ export const HeaderHome = () => {
                                 <Link to='/home/profile'>
                                     <ul>
                                         <li>{language.myprofile}</li>
-                                    </ul></Link>
+                                    </ul>
+                                </Link>
                                 <a href='w' target='_blank' rel="norefferer">
                                     <ul>
                                         <li>{language.connectWith}</li>
-                                    </ul></a>
+                                    </ul>
+                                </a>
                                 <hr></hr>
                                 <Link to='/'>
                                     <ul>
                                         <li>{language.logOut}</li>
-                                    </ul></Link>
+                                    </ul>
+                                </Link>
                             </div> : <></>}
                     </div>
                 } />

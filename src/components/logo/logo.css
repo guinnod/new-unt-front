@@ -12,3 +12,14 @@
     font-weight: 550;
     font-size: 1.8rem;
 }
+
+@media only screen and (max-width: 450px){
+    .logo__img {
+        margin: 1rem;
+        width: 6rem;
+    }
+    
+    .logo__text {
+        font-size: 2rem;
+    }
+}

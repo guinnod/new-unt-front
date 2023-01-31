@@ -102,3 +102,9 @@
         }
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .card-main__anchor {
+        font-size: 2.5rem;
+    }
+}

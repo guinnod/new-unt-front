@@ -33,11 +33,6 @@
     width: 12rem !important;
 }
 
-.card-theory__button:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
-
 .card-theory__anchor .theory__button {
     margin: 1rem;
     padding: 1rem 1.5rem;
@@ -74,5 +69,13 @@
     .card-theory__root {
         width: auto;
         height: auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .card-theory__root {
+        margin-top: 12vh;
+        height: 60vh;
+        font-size: 3rem;
     }
 }

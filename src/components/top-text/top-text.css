@@ -16,3 +16,9 @@
 .top-text__text {
     margin: 0 1rem;
 }
+
+@media only screen and (max-width: 450px) {
+    .top-text__anchor {
+        font-size: 3rem;
+    }
+}
