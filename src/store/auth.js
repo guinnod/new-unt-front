@@ -14,6 +14,7 @@ const initialState = {
         { date: '2022-10-01', count: 13 },
         { date: '2022-11-22', count: 78 },
         { date: '2023-01-30', count: 1225 },
+        { date: '2023-02-18', count: 1225 }
     ]
 };
 const authSlice = createSlice({
