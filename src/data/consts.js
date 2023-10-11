@@ -68,11 +68,19 @@ export const GetPages = (type, language) => {
                     link: "https://www.programiz.com/python-programming/online-compiler/",
                 },
                 {
+                    path: "converting",
+                    text: language.practice.Converting,
+                    subText: language.practice.ConvertingText,
+                    src: converting,
+                    link: "https://jalu.ch/coding/base_converter.php",
+                },
+                {
                     path: "html",
                     text: language.practice.Html,
                     subText: language.practice.HtmlText,
                     src: html,
                     link: "https://www.jdoodle.com/html-css-javascript-online-editor/",
+                    onClick: notifyProcess,
                 },
                 {
                     path: "sql",
@@ -89,13 +97,6 @@ export const GetPages = (type, language) => {
                     src: excel,
                     link: "",
                     onClick: notifyProcess,
-                },
-                {
-                    path: "converting",
-                    text: language.practice.Converting,
-                    subText: language.practice.ConvertingText,
-                    src: converting,
-                    link: "https://codebeautify.org/all-number-converter",
                 },
             ],
         };
