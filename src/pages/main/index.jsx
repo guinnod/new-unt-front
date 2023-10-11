@@ -126,7 +126,7 @@ export const Main = () => {
                 </div>
                 <div className="main__ready__anchor">
                     <h1 className="main__ready">{language.signText}</h1>
-                    <Link to="login">
+                    <Link to="register">
                         <div className="main__ready__button">
                             {language.signUp}
                         </div>

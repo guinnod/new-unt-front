@@ -20,7 +20,7 @@
 }
 
 .login__text--big--yellow {
-    color: #FCDC00;
+    color: #fcdc00;
 }
 
 .login__text--medium {
@@ -36,18 +36,18 @@
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 500;
     padding: 0 2rem;
 }
 
-.login__card>* {
+.login__card > * {
     margin: 0.75rem 0;
 }
 
 .login__anchor input {
     text-align: center;
     font-size: 1.3rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .login__card__button {
@@ -59,7 +59,6 @@
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
-
 
 .login__card__button img {
     width: 2rem;
@@ -75,9 +74,9 @@
 @media only screen and (max-width: 450px) {
     .login__card {
         font-size: 2.5rem;
-        font-weight: 700;
+        font-weight: 500;
     }
-    .login__card>* {
+    .login__card > * {
         margin: 1.5rem 0;
     }
     .login__anchor input {

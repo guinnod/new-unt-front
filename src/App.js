@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Main } from "./pages/main";
-import { Login } from "./pages/login";
+import { Login, Register } from "./pages/login";
 import { NotFound } from "./pages/not-found";
 import { Home } from "./pages/home";
 import { Additional } from "./pages/additional";
@@ -22,6 +22,7 @@ function MyApp() {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="login" element={<Login />} />
+                <Route path="register" element={<Register />} />
                 <Route path="home" element={<Protected isAuthorized={auth} />}>
                     <Route index element={<Home />} />
                     <Route path="profile" element={<Profile />} />
