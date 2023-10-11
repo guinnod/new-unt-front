@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap'); */
 html {
@@ -11,7 +11,7 @@ body {
     margin: 0;
     color: white;
     background: #0d0f12;
-    font-family: 'Roboto';
+    font-family: "Roboto";
     white-space: nowrap;
     font-size: 1.5rem;
     min-width: 320px;
@@ -37,12 +37,12 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-    font-family: 'Roboto';
+    font-family: "Roboto";
 }
 
 input:focus,
 textarea:focus {
-    outline: 0.2em solid #EC008C;
+    outline: 0.2em solid #ec008c;
 }
 
 ::-webkit-scrollbar {
