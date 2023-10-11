@@ -12,7 +12,7 @@ export const HeaderHome = () => {
             <Header
                 left={
                     <div className="header-home__left">
-                        <Link to="/home">
+                        <Link to="/">
                             <div className="header__button">
                                 {language.home}
                             </div>
