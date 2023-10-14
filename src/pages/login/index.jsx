@@ -1,10 +1,12 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { CardDark } from "../../components/cards/card-dark";
-import { LazyImage } from "../../components/lazy-image";
 import { PageSkeleton } from "../../components/page-skeleton";
-import { google } from "../../media";
 import "./login.css";
+import { useMutation } from "@tanstack/react-query";
+import { axios } from "../../config/axios";
+import { Button, message } from "antd";
+import { useFormik } from "formik";
 
 const LoginText = () => {
     const language = useSelector((state) => state.language.value.login);
@@ -26,6 +28,22 @@ const LoginText = () => {
 
 export const Login = () => {
     const language = useSelector((state) => state.language.value.login);
+    const postLogin = (data) => axios.post("/api/login/", data);
+    const initialValues = {
+        username: "",
+        password: "",
+    };
+    const formik = useFormik({ initialValues, onSubmit: () => {} });
+    const mutation = useMutation({
+        mutationFn: postLogin,
+        onSuccess: () => {
+            console.log("success");
+        },
+        onError: () => {
+            message.error(language.error);
+        },
+    });
+
     return (
         <PageSkeleton>
             <div className="login__anchor">
@@ -37,18 +55,26 @@ export const Login = () => {
                             id="username"
                             placeholder={language.username}
                             style={{ textAlign: "start" }}
+                            value={formik.values.username}
+                            onChange={formik.handleChange}
                         />
                         <input
+                            onChange={formik.handleChange}
+                            value={formik.values.password}
                             type="password"
                             id="password"
                             placeholder={language.password}
                             style={{ textAlign: "start" }}
                         />
-                        <Link to="/home">
-                            <div className="button--hovered login__card__button">
-                                <div>{language.signIn}</div>
-                            </div>
-                        </Link>
+                        <Button
+                            className="button--hovered login__card__button"
+                            onClick={() => {
+                                mutation.mutate();
+                            }}
+                            loading={mutation.isLoading}
+                        >
+                            <div>{language.signIn}</div>
+                        </Button>
                         <div className="login__card__text">
                             {language.alreadyHave}{" "}
                             <Link
@@ -67,6 +93,24 @@ export const Login = () => {
 
 export const Register = () => {
     const language = useSelector((state) => state.language.value.login);
+    const postLogin = (data) => {
+        return axios.post("/api/register/", data);
+    };
+    const mutation = useMutation({
+        mutationFn: postLogin,
+        onSuccess: () => {
+            console.log("success");
+        },
+        onError: () => {
+            message.error(language.error);
+        },
+    });
+    const initialValues = {
+        username: "",
+        password: "",
+        repeatPassword: "",
+    };
+    const formik = useFormik({ initialValues, onSubmit: () => {} });
     return (
         <PageSkeleton>
             <div className="login__anchor">
@@ -78,24 +122,57 @@ export const Register = () => {
                             id="username"
                             placeholder={language.username}
                             style={{ textAlign: "start" }}
+                            value={formik.values.username}
+                            onChange={formik.handleChange}
                         />
                         <input
                             type="password"
                             id="password"
                             placeholder={language.password}
                             style={{ textAlign: "start" }}
+                            value={formik.values.password}
+                            onChange={formik.handleChange}
                         />
                         <input
                             type="password"
                             id="repeatPassword"
                             placeholder={language.repeatPassword}
                             style={{ textAlign: "start" }}
+                            value={formik.values.repeatPassword}
+                            onChange={formik.handleChange}
                         />
-                        <Link to="/home">
-                            <div className="button--hovered login__card__button">
-                                <div>{language.signUp}</div>
-                            </div>
-                        </Link>
+                        <Button
+                            className="button--hovered login__card__button"
+                            onClick={() => {
+                                if (formik.values.username.length < 4) {
+                                    message.error(
+                                        language.username +
+                                            " " +
+                                            language.minLength
+                                    );
+                                    return;
+                                }
+                                if (formik.values.password.length < 4) {
+                                    message.error(
+                                        language.password +
+                                            " " +
+                                            language.minLength
+                                    );
+                                    return;
+                                }
+                                if (
+                                    formik.values.password !==
+                                    formik.values.repeatPassword
+                                ) {
+                                    message.error(language.equalRepeat);
+                                    return;
+                                }
+                                mutation.mutate(formik.values);
+                            }}
+                            loading={mutation.isLoading}
+                        >
+                            <div>{language.signUp}</div>
+                        </Button>
                         <div className="login__card__text">
                             {language.alreadyHave}{" "}
                             <Link
