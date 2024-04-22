@@ -2,7 +2,7 @@
 
 ## Overview
 
-This web platform is dedicated to helping users efficiently prepare for the United General Test in Informatics. It offers a comprehensive suite of tools designed to enhance learning through interactive quizzes, theory cards, and user progress tracking. The platform has been recognized for its innovation and impact, receiving an award of 500,000 tenge at Startup Demo Day.
+This web platform is dedicated to helping users efficiently prepare for the United General Test in Informatics. It offers a comprehensive suite of tools designed to enhance learning through interactive quizzes, theory cards, and user progress tracking. The platform has been recognized for its innovation and impact, receiving an award of 500 000 KZT at Startup Demo Day.
 
 ## Features
 
