@@ -18,6 +18,6 @@ This web platform is dedicated to helping users efficiently prepare for the Unit
 
 ## Achievements
 
-- **Startup Demo Day Award:** The platform was awarded 500,000 tenge for its innovative approach to education and significant potential impact on users' exam preparation.
+- **Startup Demo Day Award:** The platform was awarded 500 000 KZT for its innovative approach to education and significant potential impact on users' exam preparation.
 
 This platform is ideal for anyone looking to thoroughly prepare for the United General Test in Informatics, providing a structured, engaging, and effective study environment.
